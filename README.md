@@ -8,4 +8,4 @@ Prozatím udělejte následující věci:
 + vygenerujte si SSH key [Návod](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 + zprovozněte si [Git](https://code.visualstudio.com/docs/sourcecontrol/overview) a [Github](https://code.visualstudio.com/docs/sourcecontrol/github) ve VSCode
 + zprovozněte si [LaTeX](https://youtu.be/4lyHIQl4VM8) ve VSCode
-+ založte si složku na MKI, otevřete jí ve VSCode a stáhněte si tento repozitář pomocí git clone a SSH
++ založte si složku na MKI, otevřete jí ve VSCode a stáhněte si tento repozitář pomocí git clone a SSHl
