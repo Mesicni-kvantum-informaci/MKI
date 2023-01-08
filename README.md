@@ -9,5 +9,3 @@ Prozatím udělejte následující věci:
 + zprovozněte si [Git](https://code.visualstudio.com/docs/sourcecontrol/overview) a [Github](https://code.visualstudio.com/docs/sourcecontrol/github) ve VSCode
 + zprovozněte si [LaTeX](https://youtu.be/4lyHIQl4VM8) ve VSCode
 + založte si složku na MKI, otevřete jí ve VSCode a stáhněte si tento repozitář pomocí git clone a SSH
-
-bla bla bla bla
