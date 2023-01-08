@@ -1,7 +1,9 @@
 # MKI
 
-V tomto repozitáři budou uloženy všechny dokumenty týkající se MKI. 
-Až budu mít čas zprovozním na to nějaký systém a pak sem napíšu návod. 
+V tomto repozitáři budou uloženy všechny dokumenty týkající se MKI.
+<br> 
+Až budu mít čas zprovozním na to nějaký systém a pak sem napíšu návod.
+<br> 
 Prozatím udělejte následující věci:
 + stáhněte si [Git](https://git-scm.com/download/win) [Návod](https://www.atlassian.com/git/tutorials/install-git)
 + [naučte](https://youtu.be/RGOj5yH7evk) se základy s Gitem
