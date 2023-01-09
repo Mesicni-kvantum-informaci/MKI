@@ -15,6 +15,6 @@ Doporučuji udělat taky:
 
 + stáhněte si [GitHub Desktop](https://desktop.github.com/)
   + opět si stáhněte MKI repozitář (rovnou z GitHub desktop) a otevřete si ho ve VSCode ze složky GitHub (nemusíte dělat poslední krok předchozího seznamu)
-+ zprovozněte si extension [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) (pěkná vizualizace větví a úprav)\
++ zprovozněte si extension [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) (pěkná vizualizace větví a úprav)
 
 Na experimentování s Gitem a GitHubem a testování jejich funkcí můžete použít větev test.
