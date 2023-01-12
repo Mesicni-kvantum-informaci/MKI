@@ -1,5 +1,7 @@
 # MKI
 
+## Úvod
+
 V tomto repozitáři budou uloženy všechny dokumenty týkající se MKI.\
 Až budu mít čas zprovozním na to nějaký systém a pak sem napíšu návod.\
 Prozatím udělejte následující věci:
@@ -17,4 +19,29 @@ Doporučuji udělat taky:
   + opět si stáhněte MKI repozitář (rovnou z GitHub desktop) a otevřete si ho ve VSCode ze složky GitHub (nemusíte dělat poslední krok předchozího seznamu)
 + zprovozněte si extension [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) (pěkná vizualizace větví a úprav)
 
-Na experimentování s Gitem a GitHubem a testování jejich funkcí můžete použít větev test.
+Na experimentování s Gitem a GitHubem a testování jejich funkcí můžete použít větev test.\
+Pokud byste měli jakékoliv problémy napište do #technické-záležitosti na MKI discordu.\
+
+## Systém na úlohy
+
+Rozhodl jsem se absolutně okopírovat Výfuk co se týče názvů složek a z části i systému na úlohy.
+
+### Návod
+
+Otevřete si složku aktuálního ročníku (MKI1), dále složku aktuální série (batch1) a upravte .tex dokument korespondující úlohy.
+
+### Legenda
+
+serie-uloha\
+
+A - astronomická\
+
+K - kvantová\
+
+U1 - úloha 1\
+
+U2 - úloha 2\
+
+U3 - úloha 3\
+
+B - bonusová
