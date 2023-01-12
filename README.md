@@ -24,7 +24,7 @@ Pokud byste měli jakékoliv problémy napište do #technické-záležitosti na 
 
 ## Systém na úlohy
 
-Rozhodl jsem se absolutně okopírovat Výfuk co se týče názvů složek a z části i systému na úlohy.
+Rozhodl jsem se absolutně okopírovat Výfuk co se týče názvů složek a z části i systému na úlohy. S ohledem na to, že chceme mít zadání v jednom dokumentu (batchn.tex), ale je mnohem praktičtější a bezpečnější mít jednotlivé úlohy v různých .tex dokumentech jsem se rozhodl pro použití package [standalone](https://www.overleaf.com/learn/latex/Multi-file_LaTeX_projects#The_standalone_package), který umí poskládat dohromady několik .tex dokumentů [demonstrace](https://www.overleaf.com/project/new/template/19636?id=66440758&templateName=Standalone+package+example&latexEngine=pdflatex&texImage=&mainFile=). S ohledem na to, že teď úplně nemám čas to zprovozňovat tak jsem zatím přidal do složek jen jednotlivé prázdné dokumenty. Doukud se nedohodneme na designu dokumentu (viz. discord) a nezprovozním package standalone tak prosím neupravujte tyto dokumenty.
 
 ### Návod
 
