@@ -1,11 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1673623071 "c:/Users/vojta/Documents/GitHub/MKI/MKI1/batch1/main/batch1.tex" "batch1.pdf" "batch1" 1673623073 0
-  "../problems/problem1-A/problem1-A.tex" 1673622824 84 d537c0b4f819116fd16779ed78ff806f ""
-  "../problems/problem1-B/problem1-B.tex" 1673623068 84 d75a6e8d98b8d635c99369cea0272578 ""
-  "../problems/problem1-K/problem1-K.tex" 1673622833 84 63409844cfb7b929f971018aabd77185 ""
-  "../problems/problem1-U1/problem1-U1.tex" 1673622841 85 f8b183523f68882aa502a4365b550c8a ""
-  "../problems/problem1-U2/problem1-U2.tex" 1673622850 85 26c64b8a37e48c29ff312502e640ac58 ""
-  "../problems/problem1-U3/problem1-U3.tex" 1673622858 85 1f43aafb1e36fcddfa9283088e32b466 ""
+["pdflatex"] 1673813136 "c:/Users/vojta/Documents/GitHub/MKI/MKI1/batch1/main/batch1.tex" "batch1.pdf" "batch1" 1673813138 0
+  "../problems/problem1-A/problem1-A.tex" 1673810799 84 d537c0b4f819116fd16779ed78ff806f ""
+  "../problems/problem1-B/problem1-B.tex" 1673810799 84 d75a6e8d98b8d635c99369cea0272578 ""
+  "../problems/problem1-K/problem1-K.tex" 1673810799 84 63409844cfb7b929f971018aabd77185 ""
+  "../problems/problem1-U1/problem1-U1.tex" 1673810799 85 f8b183523f68882aa502a4365b550c8a ""
+  "../problems/problem1-U2/problem1-U2.tex" 1673810799 85 26c64b8a37e48c29ff312502e640ac58 ""
+  "../problems/problem1-U3/problem1-U3.tex" 1673810799 85 1f43aafb1e36fcddfa9283088e32b466 ""
   "C:/Users/vojta/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1673620525 111117 1893ee98a909f5c79a3d60dcc05388f0 ""
   "C:/Users/vojta/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1673619417 23168606 a0fd304fc6293833d8cb5621a52b98d0 ""
   "C:/Users/vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247593067 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -46,10 +46,10 @@
   "C:/Users/vojta/AppData/Local/Programs/MiKTeX/tex/latex/tools/shellesc.sty" 1654687228 4118 0aa319c56935d7d217b6a8bf300b81b7 ""
   "C:/Users/vojta/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238465940 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/vojta/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656233319 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "batch1.aux" 1673623073 69 5f87cb9125522c22b16950a5b36e2d02 "pdflatex"
-  "batch1.sta" 1673623073 465 90c909116e24e07a73413f5ca65d7dfa "pdflatex"
-  "batch1.tex" 1673623070 444 5e52f9bd4313e785eb5f18317fc84aa2 ""
-  "c:/Users/vojta/Documents/GitHub/MKI/MKI1/batch1/main/batch1.tex" 1673623070 444 5e52f9bd4313e785eb5f18317fc84aa2 ""
+  "batch1.aux" 1673813138 69 5f87cb9125522c22b16950a5b36e2d02 "pdflatex"
+  "batch1.sta" 1673813138 465 79c6533236690dc71263d60685a22c43 "pdflatex"
+  "batch1.tex" 1673813132 442 0360bf87abf1038132ae42fccd332a36 ""
+  "c:/Users/vojta/Documents/GitHub/MKI/MKI1/batch1/main/batch1.tex" 1673813132 442 0360bf87abf1038132ae42fccd332a36 ""
   (generated)
   "batch1.aux"
   "batch1.log"

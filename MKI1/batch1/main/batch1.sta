@@ -1,10 +1,4 @@
 \standalonepreambles
-\subpreamble{../problems/problem1-A/problem1-A.tex}
-
-\endsubpreamble
-\subpreamble{../problems/problem1-K/problem1-K.tex}
-
-\endsubpreamble
 \subpreamble{../problems/problem1-U1/problem1-U1.tex}
 
 \endsubpreamble
@@ -12,6 +6,12 @@
 
 \endsubpreamble
 \subpreamble{../problems/problem1-U3/problem1-U3.tex}
+
+\endsubpreamble
+\subpreamble{../problems/problem1-A/problem1-A.tex}
+
+\endsubpreamble
+\subpreamble{../problems/problem1-K/problem1-K.tex}
 
 \endsubpreamble
 \subpreamble{../problems/problem1-B/problem1-B.tex}

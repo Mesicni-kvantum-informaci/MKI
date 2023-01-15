@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.13)  13 JAN 2023 16:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.13)  15 JAN 2023 21:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -157,7 +157,7 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\vojta\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)) (../problems/problem1-A/problem1-A.tex) (../problems/problem1-K/problem1-K.tex) (../problems/problem1-U1/problem1-U1.tex) (../problems/problem1-U2/problem1-U2.tex) (../problems/problem1-U3/problem1-U3.tex) (../problems/problem1-B/problem1-B.tex) [1
+)) (../problems/problem1-U1/problem1-U1.tex) (../problems/problem1-U2/problem1-U2.tex) (../problems/problem1-U3/problem1-U3.tex) (../problems/problem1-A/problem1-A.tex) (../problems/problem1-K/problem1-K.tex) (../problems/problem1-B/problem1-B.tex) [1
 
 {C:/Users/vojta/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (batch1.aux) ) 
 Here is how much of TeX's memory you used:
