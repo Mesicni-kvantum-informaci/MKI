@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1673622825 "c:/Users/vojta/Documents/GitHub/MKI/MKI1/batch1/problems/problem1-A/problem1-A.tex" "problem1-A.pdf" "problem1-A" 1673622826 0
+["pdflatex"] 1673810593 "c:/Users/vojta/Documents/GitHub/MKI/MKI1/batch1/problems/problem1-A/problem1-A.tex" "problem1-A.pdf" "problem1-A" 1673810593 0
   "C:/Users/vojta/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1673620525 111117 1893ee98a909f5c79a3d60dcc05388f0 ""
   "C:/Users/vojta/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1673619417 23168606 a0fd304fc6293833d8cb5621a52b98d0 ""
   "C:/Users/vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247593067 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -17,7 +17,7 @@
   "C:/Users/vojta/AppData/Local/Programs/MiKTeX/tex/latex/tools/shellesc.sty" 1654687228 4118 0aa319c56935d7d217b6a8bf300b81b7 ""
   "C:/Users/vojta/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656233319 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "c:/Users/vojta/Documents/GitHub/MKI/MKI1/batch1/problems/problem1-A/problem1-A.tex" 1673622824 84 d537c0b4f819116fd16779ed78ff806f ""
-  "problem1-A.aux" 1673622826 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "problem1-A.aux" 1673810593 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   "problem1-A.tex" 1673622824 84 d537c0b4f819116fd16779ed78ff806f ""
   (generated)
   "problem1-A.aux"
