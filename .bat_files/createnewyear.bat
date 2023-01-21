@@ -193,7 +193,6 @@ md "batch12"/"solutions"/"solution12-U2"
 md "batch12"/"solutions"/"solution12-U3"
 
 
-
 cd batch1\main
 (
 echo \documentclass{article}
@@ -228,7 +227,7 @@ cd ..\problems\problem1-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 1-A}
+echo \section*{text 1-A}
 echo \end{document}
 )>"problem1-A.tex"
 
@@ -236,7 +235,7 @@ cd ..\problem1-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 1-B}
+echo \section*{text 1-B}
 echo \end{document}
 )>"problem1-B.tex"
 
@@ -244,7 +243,7 @@ cd ..\problem1-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 1-K}
+echo \section*{text 1-K}
 echo \end{document}
 )>"problem1-K.tex"
 
@@ -252,7 +251,7 @@ cd ..\problem1-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 1-U1}
+echo \section*{text 1-U1}
 echo \end{document}
 )>"problem1-U1.tex"
 
@@ -260,7 +259,7 @@ cd ..\problem1-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 1-U2}
+echo \section*{text 1-U2}
 echo \end{document}
 )>"problem1-U2.tex"
 
@@ -268,7 +267,7 @@ cd ..\problem1-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 1-U3}
+echo \section*{text 1-U3}
 echo \end{document}
 )>"problem1-U3.tex"
 
@@ -277,7 +276,7 @@ cd ..\..\solutions\solution1-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 1-A}
+echo \section*{solution text 1-A}
 echo \end{document}
 )>"solution1-A.tex"
 
@@ -285,7 +284,7 @@ cd ..\solution1-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 1-B}
+echo \section*{solution text 1-B}
 echo \end{document}
 )>"solution1-B.tex"
 
@@ -293,7 +292,7 @@ cd ..\solution1-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 1-K}
+echo \section*{solution text 1-K}
 echo \end{document}
 )>"solution1-K.tex"
 
@@ -301,7 +300,7 @@ cd ..\solution1-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 1-U1}
+echo \section*{solution text 1-U1}
 echo \end{document}
 )>"solution1-U1.tex"
 
@@ -309,7 +308,7 @@ cd ..\solution1-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 1-U2}
+echo \section*{solution text 1-U2}
 echo \end{document}
 )>"solution1-U2.tex"
 
@@ -317,7 +316,7 @@ cd ..\solution1-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 1-U3}
+echo \section*{solution text 1-U3}
 echo \end{document}
 )>"solution1-U3.tex"
 
@@ -359,7 +358,7 @@ cd ..\problems\problem2-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 2-A}
+echo \section*{text 2-A}
 echo \end{document}
 )>"problem2-A.tex"
 
@@ -367,7 +366,7 @@ cd ..\problem2-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 2-B}
+echo \section*{text 2-B}
 echo \end{document}
 )>"problem2-B.tex"
 
@@ -375,7 +374,7 @@ cd ..\problem2-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 2-K}
+echo \section*{text 2-K}
 echo \end{document}
 )>"problem2-K.tex"
 
@@ -383,7 +382,7 @@ cd ..\problem2-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 2-U1}
+echo \section*{text 2-U1}
 echo \end{document}
 )>"problem2-U1.tex"
 
@@ -391,7 +390,7 @@ cd ..\problem2-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 2-U2}
+echo \section*{text 2-U2}
 echo \end{document}
 )>"problem2-U2.tex"
 
@@ -399,7 +398,7 @@ cd ..\problem2-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 2-U3}
+echo \section*{text 2-U3}
 echo \end{document}
 )>"problem2-U3.tex"
 
@@ -408,7 +407,7 @@ cd ..\..\solutions\solution2-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 2-A}
+echo \section*{solution text 2-A}
 echo \end{document}
 )>"solution2-A.tex"
 
@@ -416,7 +415,7 @@ cd ..\solution2-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 2-B}
+echo \section*{solution text 2-B}
 echo \end{document}
 )>"solution2-B.tex"
 
@@ -424,7 +423,7 @@ cd ..\solution2-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 2-K}
+echo \section*{solution text 2-K}
 echo \end{document}
 )>"solution2-K.tex"
 
@@ -432,7 +431,7 @@ cd ..\solution2-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 2-U1}
+echo \section*{solution text 2-U1}
 echo \end{document}
 )>"solution2-U1.tex"
 
@@ -440,7 +439,7 @@ cd ..\solution2-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 2-U2}
+echo \section*{solution text 2-U2}
 echo \end{document}
 )>"solution2-U2.tex"
 
@@ -448,7 +447,7 @@ cd ..\solution2-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 2-U3}
+echo \section*{solution text 2-U3}
 echo \end{document}
 )>"solution2-U3.tex"
 
@@ -490,7 +489,7 @@ cd ..\problems\problem3-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 3-A}
+echo \section*{text 3-A}
 echo \end{document}
 )>"problem3-A.tex"
 
@@ -498,7 +497,7 @@ cd ..\problem3-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 3-B}
+echo \section*{text 3-B}
 echo \end{document}
 )>"problem3-B.tex"
 
@@ -506,7 +505,7 @@ cd ..\problem3-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 3-K}
+echo \section*{text 3-K}
 echo \end{document}
 )>"problem3-K.tex"
 
@@ -514,7 +513,7 @@ cd ..\problem3-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 3-U1}
+echo \section*{text 3-U1}
 echo \end{document}
 )>"problem3-U1.tex"
 
@@ -522,7 +521,7 @@ cd ..\problem3-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 3-U2}
+echo \section*{text 3-U2}
 echo \end{document}
 )>"problem3-U2.tex"
 
@@ -530,7 +529,7 @@ cd ..\problem3-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 3-U3}
+echo \section*{text 3-U3}
 echo \end{document}
 )>"problem3-U3.tex"
 
@@ -539,7 +538,7 @@ cd ..\..\solutions\solution3-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 3-A}
+echo \section*{solution text 3-A}
 echo \end{document}
 )>"solution3-A.tex"
 
@@ -547,7 +546,7 @@ cd ..\solution3-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 3-B}
+echo \section*{solution text 3-B}
 echo \end{document}
 )>"solution3-B.tex"
 
@@ -555,7 +554,7 @@ cd ..\solution3-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 3-K}
+echo \section*{solution text 3-K}
 echo \end{document}
 )>"solution3-K.tex"
 
@@ -563,7 +562,7 @@ cd ..\solution3-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 3-U1}
+echo \section*{solution text 3-U1}
 echo \end{document}
 )>"solution3-U1.tex"
 
@@ -571,7 +570,7 @@ cd ..\solution3-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 3-U2}
+echo \section*{solution text 3-U2}
 echo \end{document}
 )>"solution3-U2.tex"
 
@@ -579,7 +578,7 @@ cd ..\solution3-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 3-U3}
+echo \section*{solution text 3-U3}
 echo \end{document}
 )>"solution3-U3.tex"
 
@@ -621,7 +620,7 @@ cd ..\problems\problem4-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 4-A}
+echo \section*{text 4-A}
 echo \end{document}
 )>"problem4-A.tex"
 
@@ -629,7 +628,7 @@ cd ..\problem4-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 4-B}
+echo \section*{text 4-B}
 echo \end{document}
 )>"problem4-B.tex"
 
@@ -637,7 +636,7 @@ cd ..\problem4-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 4-K}
+echo \section*{text 4-K}
 echo \end{document}
 )>"problem4-K.tex"
 
@@ -645,7 +644,7 @@ cd ..\problem4-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 4-U1}
+echo \section*{text 4-U1}
 echo \end{document}
 )>"problem4-U1.tex"
 
@@ -653,7 +652,7 @@ cd ..\problem4-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 4-U2}
+echo \section*{text 4-U2}
 echo \end{document}
 )>"problem4-U2.tex"
 
@@ -661,7 +660,7 @@ cd ..\problem4-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 4-U3}
+echo \section*{text 4-U3}
 echo \end{document}
 )>"problem4-U3.tex"
 
@@ -670,7 +669,7 @@ cd ..\..\solutions\solution4-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 4-A}
+echo \section*{solution text 4-A}
 echo \end{document}
 )>"solution4-A.tex"
 
@@ -678,7 +677,7 @@ cd ..\solution4-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 4-B}
+echo \section*{solution text 4-B}
 echo \end{document}
 )>"solution4-B.tex"
 
@@ -686,7 +685,7 @@ cd ..\solution4-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 4-K}
+echo \section*{solution text 4-K}
 echo \end{document}
 )>"solution4-K.tex"
 
@@ -694,7 +693,7 @@ cd ..\solution4-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 4-U1}
+echo \section*{solution text 4-U1}
 echo \end{document}
 )>"solution4-U1.tex"
 
@@ -702,7 +701,7 @@ cd ..\solution4-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 4-U2}
+echo \section*{solution text 4-U2}
 echo \end{document}
 )>"solution4-U2.tex"
 
@@ -710,7 +709,7 @@ cd ..\solution4-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 4-U3}
+echo \section*{solution text 4-U3}
 echo \end{document}
 )>"solution4-U3.tex"
 
@@ -752,7 +751,7 @@ cd ..\problems\problem5-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 5-A}
+echo \section*{text 5-A}
 echo \end{document}
 )>"problem5-A.tex"
 
@@ -760,7 +759,7 @@ cd ..\problem5-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 5-B}
+echo \section*{text 5-B}
 echo \end{document}
 )>"problem5-B.tex"
 
@@ -768,7 +767,7 @@ cd ..\problem5-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 5-K}
+echo \section*{text 5-K}
 echo \end{document}
 )>"problem5-K.tex"
 
@@ -776,7 +775,7 @@ cd ..\problem5-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 5-U1}
+echo \section*{text 5-U1}
 echo \end{document}
 )>"problem5-U1.tex"
 
@@ -784,7 +783,7 @@ cd ..\problem5-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 5-U2}
+echo \section*{text 5-U2}
 echo \end{document}
 )>"problem5-U2.tex"
 
@@ -792,7 +791,7 @@ cd ..\problem5-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 5-U3}
+echo \section*{text 5-U3}
 echo \end{document}
 )>"problem5-U3.tex"
 
@@ -801,7 +800,7 @@ cd ..\..\solutions\solution5-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 5-A}
+echo \section*{solution text 5-A}
 echo \end{document}
 )>"solution5-A.tex"
 
@@ -809,7 +808,7 @@ cd ..\solution5-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 5-B}
+echo \section*{solution text 5-B}
 echo \end{document}
 )>"solution5-B.tex"
 
@@ -817,7 +816,7 @@ cd ..\solution5-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 5-K}
+echo \section*{solution text 5-K}
 echo \end{document}
 )>"solution5-K.tex"
 
@@ -825,7 +824,7 @@ cd ..\solution5-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 5-U1}
+echo \section*{solution text 5-U1}
 echo \end{document}
 )>"solution5-U1.tex"
 
@@ -833,7 +832,7 @@ cd ..\solution5-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 5-U2}
+echo \section*{solution text 5-U2}
 echo \end{document}
 )>"solution5-U2.tex"
 
@@ -841,7 +840,7 @@ cd ..\solution5-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 5-U3}
+echo \section*{solution text 5-U3}
 echo \end{document}
 )>"solution5-U3.tex"
 
@@ -883,7 +882,7 @@ cd ..\problems\problem6-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 6-A}
+echo \section*{text 6-A}
 echo \end{document}
 )>"problem6-A.tex"
 
@@ -891,7 +890,7 @@ cd ..\problem6-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 6-B}
+echo \section*{text 6-B}
 echo \end{document}
 )>"problem6-B.tex"
 
@@ -899,7 +898,7 @@ cd ..\problem6-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 6-K}
+echo \section*{text 6-K}
 echo \end{document}
 )>"problem6-K.tex"
 
@@ -907,7 +906,7 @@ cd ..\problem6-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 6-U1}
+echo \section*{text 6-U1}
 echo \end{document}
 )>"problem6-U1.tex"
 
@@ -915,7 +914,7 @@ cd ..\problem6-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 6-U2}
+echo \section*{text 6-U2}
 echo \end{document}
 )>"problem6-U2.tex"
 
@@ -923,7 +922,7 @@ cd ..\problem6-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 6-U3}
+echo \section*{text 6-U3}
 echo \end{document}
 )>"problem6-U3.tex"
 
@@ -932,7 +931,7 @@ cd ..\..\solutions\solution6-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 6-A}
+echo \section*{solution text 6-A}
 echo \end{document}
 )>"solution6-A.tex"
 
@@ -940,7 +939,7 @@ cd ..\solution6-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 6-B}
+echo \section*{solution text 6-B}
 echo \end{document}
 )>"solution6-B.tex"
 
@@ -948,7 +947,7 @@ cd ..\solution6-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 6-K}
+echo \section*{solution text 6-K}
 echo \end{document}
 )>"solution6-K.tex"
 
@@ -956,7 +955,7 @@ cd ..\solution6-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 6-U1}
+echo \section*{solution text 6-U1}
 echo \end{document}
 )>"solution6-U1.tex"
 
@@ -964,7 +963,7 @@ cd ..\solution6-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 6-U2}
+echo \section*{solution text 6-U2}
 echo \end{document}
 )>"solution6-U2.tex"
 
@@ -972,7 +971,7 @@ cd ..\solution6-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 6-U3}
+echo \section*{solution text 6-U3}
 echo \end{document}
 )>"solution6-U3.tex"
 
@@ -1014,7 +1013,7 @@ cd ..\problems\problem7-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 7-A}
+echo \section*{text 7-A}
 echo \end{document}
 )>"problem7-A.tex"
 
@@ -1022,7 +1021,7 @@ cd ..\problem7-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 7-B}
+echo \section*{text 7-B}
 echo \end{document}
 )>"problem7-B.tex"
 
@@ -1030,7 +1029,7 @@ cd ..\problem7-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 7-K}
+echo \section*{text 7-K}
 echo \end{document}
 )>"problem7-K.tex"
 
@@ -1038,7 +1037,7 @@ cd ..\problem7-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 7-U1}
+echo \section*{text 7-U1}
 echo \end{document}
 )>"problem7-U1.tex"
 
@@ -1046,7 +1045,7 @@ cd ..\problem7-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 7-U2}
+echo \section*{text 7-U2}
 echo \end{document}
 )>"problem7-U2.tex"
 
@@ -1054,7 +1053,7 @@ cd ..\problem7-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 7-U3}
+echo \section*{text 7-U3}
 echo \end{document}
 )>"problem7-U3.tex"
 
@@ -1063,7 +1062,7 @@ cd ..\..\solutions\solution7-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 7-A}
+echo \section*{solution text 7-A}
 echo \end{document}
 )>"solution7-A.tex"
 
@@ -1071,7 +1070,7 @@ cd ..\solution7-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 7-B}
+echo \section*{solution text 7-B}
 echo \end{document}
 )>"solution7-B.tex"
 
@@ -1079,7 +1078,7 @@ cd ..\solution7-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 7-K}
+echo \section*{solution text 7-K}
 echo \end{document}
 )>"solution7-K.tex"
 
@@ -1087,7 +1086,7 @@ cd ..\solution7-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 7-U1}
+echo \section*{solution text 7-U1}
 echo \end{document}
 )>"solution7-U1.tex"
 
@@ -1095,7 +1094,7 @@ cd ..\solution7-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 7-U2}
+echo \section*{solution text 7-U2}
 echo \end{document}
 )>"solution7-U2.tex"
 
@@ -1103,7 +1102,7 @@ cd ..\solution7-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 7-U3}
+echo \section*{solution text 7-U3}
 echo \end{document}
 )>"solution7-U3.tex"
 
@@ -1145,7 +1144,7 @@ cd ..\problems\problem8-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 8-A}
+echo \section*{text 8-A}
 echo \end{document}
 )>"problem8-A.tex"
 
@@ -1153,7 +1152,7 @@ cd ..\problem8-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 8-B}
+echo \section*{text 8-B}
 echo \end{document}
 )>"problem8-B.tex"
 
@@ -1161,7 +1160,7 @@ cd ..\problem8-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 8-K}
+echo \section*{text 8-K}
 echo \end{document}
 )>"problem8-K.tex"
 
@@ -1169,7 +1168,7 @@ cd ..\problem8-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 8-U1}
+echo \section*{text 8-U1}
 echo \end{document}
 )>"problem8-U1.tex"
 
@@ -1177,7 +1176,7 @@ cd ..\problem8-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 8-U2}
+echo \section*{text 8-U2}
 echo \end{document}
 )>"problem8-U2.tex"
 
@@ -1185,7 +1184,7 @@ cd ..\problem8-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 8-U3}
+echo \section*{text 8-U3}
 echo \end{document}
 )>"problem8-U3.tex"
 
@@ -1194,7 +1193,7 @@ cd ..\..\solutions\solution8-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 8-A}
+echo \section*{solution text 8-A}
 echo \end{document}
 )>"solution8-A.tex"
 
@@ -1202,7 +1201,7 @@ cd ..\solution8-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 8-B}
+echo \section*{solution text 8-B}
 echo \end{document}
 )>"solution8-B.tex"
 
@@ -1210,7 +1209,7 @@ cd ..\solution8-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 8-K}
+echo \section*{solution text 8-K}
 echo \end{document}
 )>"solution8-K.tex"
 
@@ -1218,7 +1217,7 @@ cd ..\solution8-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 8-U1}
+echo \section*{solution text 8-U1}
 echo \end{document}
 )>"solution8-U1.tex"
 
@@ -1226,7 +1225,7 @@ cd ..\solution8-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 8-U2}
+echo \section*{solution text 8-U2}
 echo \end{document}
 )>"solution8-U2.tex"
 
@@ -1234,7 +1233,7 @@ cd ..\solution8-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 8-U3}
+echo \section*{solution text 8-U3}
 echo \end{document}
 )>"solution8-U3.tex"
 
@@ -1276,7 +1275,7 @@ cd ..\problems\problem9-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 9-A}
+echo \section*{text 9-A}
 echo \end{document}
 )>"problem9-A.tex"
 
@@ -1284,7 +1283,7 @@ cd ..\problem9-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 9-B}
+echo \section*{text 9-B}
 echo \end{document}
 )>"problem9-B.tex"
 
@@ -1292,7 +1291,7 @@ cd ..\problem9-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 9-K}
+echo \section*{text 9-K}
 echo \end{document}
 )>"problem9-K.tex"
 
@@ -1300,7 +1299,7 @@ cd ..\problem9-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 9-U1}
+echo \section*{text 9-U1}
 echo \end{document}
 )>"problem9-U1.tex"
 
@@ -1308,7 +1307,7 @@ cd ..\problem9-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 9-U2}
+echo \section*{text 9-U2}
 echo \end{document}
 )>"problem9-U2.tex"
 
@@ -1316,7 +1315,7 @@ cd ..\problem9-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 9-U3}
+echo \section*{text 9-U3}
 echo \end{document}
 )>"problem9-U3.tex"
 
@@ -1325,7 +1324,7 @@ cd ..\..\solutions\solution9-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 9-A}
+echo \section*{solution text 9-A}
 echo \end{document}
 )>"solution9-A.tex"
 
@@ -1333,7 +1332,7 @@ cd ..\solution9-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 9-B}
+echo \section*{solution text 9-B}
 echo \end{document}
 )>"solution9-B.tex"
 
@@ -1341,7 +1340,7 @@ cd ..\solution9-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 9-K}
+echo \section*{solution text 9-K}
 echo \end{document}
 )>"solution9-K.tex"
 
@@ -1349,7 +1348,7 @@ cd ..\solution9-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 9-U1}
+echo \section*{solution text 9-U1}
 echo \end{document}
 )>"solution9-U1.tex"
 
@@ -1357,7 +1356,7 @@ cd ..\solution9-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 9-U2}
+echo \section*{solution text 9-U2}
 echo \end{document}
 )>"solution9-U2.tex"
 
@@ -1365,7 +1364,7 @@ cd ..\solution9-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 9-U3}
+echo \section*{solution text 9-U3}
 echo \end{document}
 )>"solution9-U3.tex"
 
@@ -1407,7 +1406,7 @@ cd ..\problems\problem10-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 10-A}
+echo \section*{text 10-A}
 echo \end{document}
 )>"problem10-A.tex"
 
@@ -1415,7 +1414,7 @@ cd ..\problem10-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 10-B}
+echo \section*{text 10-B}
 echo \end{document}
 )>"problem10-B.tex"
 
@@ -1423,7 +1422,7 @@ cd ..\problem10-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 10-K}
+echo \section*{text 10-K}
 echo \end{document}
 )>"problem10-K.tex"
 
@@ -1431,7 +1430,7 @@ cd ..\problem10-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 10-U1}
+echo \section*{text 10-U1}
 echo \end{document}
 )>"problem10-U1.tex"
 
@@ -1439,7 +1438,7 @@ cd ..\problem10-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 10-U2}
+echo \section*{text 10-U2}
 echo \end{document}
 )>"problem10-U2.tex"
 
@@ -1447,7 +1446,7 @@ cd ..\problem10-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 10-U3}
+echo \section*{text 10-U3}
 echo \end{document}
 )>"problem10-U3.tex"
 
@@ -1456,7 +1455,7 @@ cd ..\..\solutions\solution10-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 10-A}
+echo \section*{solution text 10-A}
 echo \end{document}
 )>"solution10-A.tex"
 
@@ -1464,7 +1463,7 @@ cd ..\solution10-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 10-B}
+echo \section*{solution text 10-B}
 echo \end{document}
 )>"solution10-B.tex"
 
@@ -1472,7 +1471,7 @@ cd ..\solution10-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 10-K}
+echo \section*{solution text 10-K}
 echo \end{document}
 )>"solution10-K.tex"
 
@@ -1480,7 +1479,7 @@ cd ..\solution10-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 10-U1}
+echo \section*{solution text 10-U1}
 echo \end{document}
 )>"solution10-U1.tex"
 
@@ -1488,7 +1487,7 @@ cd ..\solution10-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 10-U2}
+echo \section*{solution text 10-U2}
 echo \end{document}
 )>"solution10-U2.tex"
 
@@ -1496,7 +1495,7 @@ cd ..\solution10-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 10-U3}
+echo \section*{solution text 10-U3}
 echo \end{document}
 )>"solution10-U3.tex"
 
@@ -1537,7 +1536,7 @@ cd ..\problems\problem11-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 11-A}
+echo \section*{text 11-A}
 echo \end{document}
 )>"problem11-A.tex"
 
@@ -1545,7 +1544,7 @@ cd ..\problem11-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 11-B}
+echo \section*{text 11-B}
 echo \end{document}
 )>"problem11-B.tex"
 
@@ -1553,7 +1552,7 @@ cd ..\problem11-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 11-K}
+echo \section*{text 11-K}
 echo \end{document}
 )>"problem11-K.tex"
 
@@ -1561,7 +1560,7 @@ cd ..\problem11-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 11-U1}
+echo \section*{text 11-U1}
 echo \end{document}
 )>"problem11-U1.tex"
 
@@ -1569,7 +1568,7 @@ cd ..\problem11-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 11-U2}
+echo \section*{text 11-U2}
 echo \end{document}
 )>"problem11-U2.tex"
 
@@ -1577,7 +1576,7 @@ cd ..\problem11-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 11-U3}
+echo \section*{text 11-U3}
 echo \end{document}
 )>"problem11-U3.tex"
 
@@ -1586,7 +1585,7 @@ cd ..\..\solutions\solution11-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 11-A}
+echo \section*{solution text 11-A}
 echo \end{document}
 )>"solution11-A.tex"
 
@@ -1594,7 +1593,7 @@ cd ..\solution11-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 11-B}
+echo \section*{solution text 11-B}
 echo \end{document}
 )>"solution11-B.tex"
 
@@ -1602,7 +1601,7 @@ cd ..\solution11-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 11-K}
+echo \section*{solution text 11-K}
 echo \end{document}
 )>"solution11-K.tex"
 
@@ -1610,7 +1609,7 @@ cd ..\solution11-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 11-U1}
+echo \section*{solution text 11-U1}
 echo \end{document}
 )>"solution11-U1.tex"
 
@@ -1618,7 +1617,7 @@ cd ..\solution11-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 11-U2}
+echo \section*{solution text 11-U2}
 echo \end{document}
 )>"solution11-U2.tex"
 
@@ -1626,7 +1625,7 @@ cd ..\solution11-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 11-U3}
+echo \section*{solution text 11-U3}
 echo \end{document}
 )>"solution11-U3.tex"
 
@@ -1667,7 +1666,7 @@ cd ..\problems\problem12-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 12-A}
+echo \section*{text 12-A}
 echo \end{document}
 )>"problem12-A.tex"
 
@@ -1675,7 +1674,7 @@ cd ..\problem12-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 12-B}
+echo \section*{text 12-B}
 echo \end{document}
 )>"problem12-B.tex"
 
@@ -1683,7 +1682,7 @@ cd ..\problem12-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 12-K}
+echo \section*{text 12-K}
 echo \end{document}
 )>"problem12-K.tex"
 
@@ -1691,7 +1690,7 @@ cd ..\problem12-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 12-U1}
+echo \section*{text 12-U1}
 echo \end{document}
 )>"problem12-U1.tex"
 
@@ -1699,7 +1698,7 @@ cd ..\problem12-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 12-U2}
+echo \section*{text 12-U2}
 echo \end{document}
 )>"problem12-U2.tex"
 
@@ -1707,7 +1706,7 @@ cd ..\problem12-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{text 12-U3}
+echo \section*{text 12-U3}
 echo \end{document}
 )>"problem12-U3.tex"
 
@@ -1716,7 +1715,7 @@ cd ..\..\solutions\solution12-A
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 12-A}
+echo \section*{solution text 12-A}
 echo \end{document}
 )>"solution12-A.tex"
 
@@ -1724,7 +1723,7 @@ cd ..\solution12-B
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 12-B}
+echo \section*{solution text 12-B}
 echo \end{document}
 )>"solution12-B.tex"
 
@@ -1732,7 +1731,7 @@ cd ..\solution12-K
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 12-K}
+echo \section*{solution text 12-K}
 echo \end{document}
 )>"solution12-K.tex"
 
@@ -1740,7 +1739,7 @@ cd ..\solution12-U1
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 12-U1}
+echo \section*{solution text 12-U1}
 echo \end{document}
 )>"solution12-U1.tex"
 
@@ -1748,7 +1747,7 @@ cd ..\solution12-U2
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 12-U2}
+echo \section*{solution text 12-U2}
 echo \end{document}
 )>"solution12-U2.tex"
 
@@ -1756,7 +1755,6 @@ cd ..\solution12-U3
 (
 echo \documentclass[crop=false]{standalone}
 echo \begin{document}
-echo \section{solution text 12-U3}
+echo \section*{solution text 12-U3}
 echo \end{document}
 )>"solution12-U3.tex"
-
