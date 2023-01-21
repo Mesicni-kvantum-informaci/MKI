@@ -24,7 +24,8 @@ B - bonusová
 
 ## Git/GitHub návod
 
-Před provedením jakékoliv úpravy se ujistěte, že se nácházíte ve větvi *main* a spusťte `git pull origin`
+Před provedením jakékoliv úpravy se ujistěte, že se nácházíte ve větvi *main* a spusťte `git pull origin`, tím si "stáhnete" aktuální verzi MKI repozitáře z GitHubu. Pak si založte novou větev na úpravy příkazem `git branch název-větve`. Prosím pojmenovávejte větve ve formátu `DDMMX`, kde `DD` je číslo dne v měsíci, `MM` je číslo měsíce a `X` je počáteční písmeno vašeho křestního jména (M, V, J). Nová větev založená 21. 1. Michalem by se jmenovala `2101M`. Přesuňtě se do větve příkazem `git checkout název-větve`. V této nově založené větvi proveďte veškeré úpravy. Při prvním uploadování změn na GitHub použijte `git push --set-upstream origin název-větve`, pak už můžete používat klasicské `git push`. Až budete spokojeni se všemi změnami otevřete si MKI repozitář na GitHubu, otevřete si 3 záložku z leva *Pull requests* a klikněte na tlačítko *New pull request*.
+![image info](propagace/logo/mkilogowhite.png)
 
 ## Propagace
 
