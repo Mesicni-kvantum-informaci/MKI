@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1674306954 "c:/STRO#/STRO#/GitHub/MKI/MKI1/batch1/problems/problem1-K/problem1-K.tex" "problem1-K.pdf" "problem1-K" 1674306955 2
+["pdflatex"] 1674307860 "c:/STRO#/STRO#/GitHub/MKI/MKI1/batch1/problems/problem1-K/problem1-K.tex" "problem1-K.pdf" "problem1-K" 1674307862 0
   "C:/Users/michal/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1674306846 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/michal/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1673601790 23169078 8b2e1869878d2b6928b5d0e3dd0d88c2 ""
   "C:/Users/michal/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -25,9 +25,9 @@
   "C:/Users/michal/AppData/Local/Programs/MiKTeX/tex/latex/standalone/standalone.cls" 1665991256 29032 f9277545472a63d812460310b499511e ""
   "C:/Users/michal/AppData/Local/Programs/MiKTeX/tex/latex/tools/shellesc.sty" 1654687228 4118 0aa319c56935d7d217b6a8bf300b81b7 ""
   "C:/Users/michal/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656233319 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/STRO#/STRO#/GitHub/MKI/MKI1/batch1/problems/problem1-K/problem1-K.tex" 1674306948 3209 25af1d3fcb6823a482fac0b412c8bce5 ""
-  "problem1-K.aux" 1674306955 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "problem1-K.tex" 1674306948 3209 25af1d3fcb6823a482fac0b412c8bce5 ""
+  "c:/STRO#/STRO#/GitHub/MKI/MKI1/batch1/problems/problem1-K/problem1-K.tex" 1674307860 3213 d75b4ee6b39389e5868034b63108a13c ""
+  "problem1-K.aux" 1674307861 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "problem1-K.tex" 1674307860 3213 d75b4ee6b39389e5868034b63108a13c ""
   (generated)
   "problem1-K.aux"
   "problem1-K.log"
