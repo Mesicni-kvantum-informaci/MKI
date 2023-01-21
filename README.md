@@ -24,10 +24,7 @@ B - bonusová
 
 ## Git/GitHub návod
 
-Před provedením jakékoliv úpravy se ujistěte, že se nácházíte ve větvi *main* a spusťte
-```
-git pull origin
-```
+Před provedením jakékoliv úpravy se ujistěte, že se nácházíte ve větvi *main* a spusťte `git pull origin`
 
 ## Propagace
 
