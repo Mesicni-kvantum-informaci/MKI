@@ -11,15 +11,10 @@ N - číslo série\
 X - typ úlohy\
 \
 A - astronomická\
-\
 K - kvantová\
-\
 U1 - úloha 1\
-\
 U2 - úloha 2\
-\
 U3 - úloha 3\
-\
 B - bonusová
 
 ## Git/GitHub návod
