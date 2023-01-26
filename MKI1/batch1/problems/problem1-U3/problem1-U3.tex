@@ -1,4 +1,46 @@
 \documentclass[crop=false]{standalone}
+\usepackage{blindtext, mdframed, graphicx, float}
+
 \begin{document}
-\section*{text 1-U3}
+\section*{Slavné osobnosti fyziky}
+K obrázkům níže přiřaďte jména vyobrazených fyziků a jejich přínos vědě (využijte pojmy z následujích rámečků).
+
+\begin{mdframed}[frametitle={Jména}, frametitlealignment=\center, ]
+    \begin{center}
+        Albert~Einstein, Isaac~Newton, Michael~Faraday, Stephen~Hawking, Erwin~Schrödinger, Marie~Curie-Skłodowska
+    \end{center}
+\end{mdframed}
+\vspace{-0,4cm}
+\begin{mdframed}[frametitle={Díla}, frametitlealignment=\center]
+    \begin{center}
+        speciální~princip~relativity, gravitační~zákon, elektromagnetická~indukce, stanovení~teploty~černé~díry, myšlenkový~experiment~s~kočkou~v~krabici, teorie~radioaktivity
+    \end{center}
+\end{mdframed}
+
+\begin{figure}[H]
+  \minipage{0.32\textwidth}
+    \includegraphics[width=\linewidth]{images/albert-einstein.jpeg}
+  \endminipage\hfill
+  \minipage{0.32\textwidth}
+    \includegraphics[width=\linewidth]{images/erwin-schrödinger.jpg}
+  \endminipage\hfill
+  \minipage{0.32\textwidth}%
+    \includegraphics[width=\linewidth]{images/isaac-newton.jpg}
+  \endminipage
+  \vspace{1,25cm}
+\end{figure}
+
+\begin{figure}[H]
+  \minipage{0.32\textwidth}
+    \includegraphics[width=\linewidth]{images/marie-curie-sklodowska.jpg}
+  \endminipage\hfill
+  \minipage{0.32\textwidth}
+    \includegraphics[width=\linewidth]{images/michael-faraday.jpeg}
+  \endminipage\hfill
+  \minipage{0.32\textwidth}%
+    \includegraphics[width=\linewidth]{images/stephen-hawking.jpg}
+  \endminipage
+  \vspace{1,25cm}
+\end{figure}
+
 \end{document}
