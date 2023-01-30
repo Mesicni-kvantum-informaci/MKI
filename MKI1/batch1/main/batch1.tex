@@ -1,19 +1,27 @@
 \documentclass[11pt]{article}
 \usepackage[subpreambles=true]{standalone}
-\usepackage{import, fancyhdr, layout}
-
+\usepackage{import, fancyhdr, layout, graphicx}
 
 \hoffset=-0,71cm
 \voffset=0cm
-\topmargin=-1cm
+\topmargin=-2cm
 %\headheight=0cm
-\headsep=0.5cm
+\headsep=8cm
 %\textheight=23cm
 \textwidth=18cm
-\footskip=3.2cm
+%\footskip=3.2cm
 \oddsidemargin=0pt
 
+%\fancyhead[C]{\Huge MKi}
+
+%\newpage
+
 \begin{document}
+
+\thispagestyle{fancy}
+\fancyhead[C]{\includegraphics{../../../propagace/logo/mkilogo.png}}
+
+%\newpage
 \import{../problems/problem1-U1/}{problem1-U1.tex}
 \import{../problems/problem1-U2/}{problem1-U2.tex}
 \import{../problems/problem1-U3/}{problem1-U3.tex}
