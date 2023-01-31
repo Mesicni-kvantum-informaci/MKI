@@ -1,33 +1,58 @@
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 \usepackage[subpreambles=true]{standalone}
 \usepackage{import, fancyhdr, layout, graphicx}
 
 \hoffset=-0,71cm
-\voffset=0cm
+\voffset=1cm
 \topmargin=-2cm
 %\headheight=0cm
-\headsep=8cm
+\headsep=1cm
 %\textheight=23cm
 \textwidth=18cm
-%\footskip=3.2cm
+\footskip=4cm
 \oddsidemargin=0pt
 
-%\fancyhead[C]{\Huge MKi}
+    %záhalví 
+\pagestyle{fancy}
+\fancyhead[R]{únor 2023}
+\fancyhead[C]{Měsíční kvantum informací}
+\fancyhead[L]{1. série}
 
-%\newpage
+    %záhlaví první strany
+\fancypagestyle{firststyle}
+{
+   \fancyhf{}
+}
 
 \begin{document}
+\thispagestyle{firststyle}
 
-\thispagestyle{fancy}
-\fancyhead[C]{\includegraphics{../../../propagace/logo/mkilogo.png}}
+\includegraphics[scale=1]{../../../propagace/logo/mkilogo.png}\\
+\quad\\
+\textbf{Měsíční kvantum informací}\\
+\quad\\
+1. série, únor 2023
 
-%\newpage
+\newpage
+\import{../problems/problem1-U3/}{problem1-U3.tex}
 \import{../problems/problem1-U1/}{problem1-U1.tex}
 \import{../problems/problem1-U2/}{problem1-U2.tex}
-\import{../problems/problem1-U3/}{problem1-U3.tex}
+%\newpage
+%\import{../problems/problem1-U3/}{problem1-U3.tex}
 \import{../problems/problem1-A/}{problem1-A.tex}
 \import{../problems/problem1-K/}{problem1-K.tex}
 \import{../problems/problem1-B/}{problem1-B.tex}
 \newpage
 \layout*
 \end{document}
+
+
+%\fancyhead[R]{\includegraphics[scale=0.15]{../../../propagace/logo/mkilogo.png}}
+
+%\fancyhead[C]{\includegraphics[scale=1]{../../../propagace/logo/mkilogo.png
+  % }\\
+  % \quad\\
+   %\Huge \textbf{Měsíční kvantum informací}\\
+  % \LARGE 1. série, únor 2023}
+ % \renewcommand{\headrulewidth}{0pt} % removes horizontal header line
+ %  \headsep=10cm
