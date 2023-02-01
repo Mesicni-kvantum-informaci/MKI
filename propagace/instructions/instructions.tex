@@ -1,5 +1,58 @@
-\documentclass{article}
+\documentclass[12pt]{article}
+\usepackage{import, fancyhdr, layout, graphicx}
+\usepackage{blindtext, mdframed, float}
+\usepackage{siunitx}
+\usepackage{standalone}
+\sisetup{output-decimal-marker = {,}}
+\usepackage[czech]{babel}
+
+\hoffset=-0,71cm
+\voffset=1cm
+\topmargin=-2cm
+%\headheight=0cm
+\headsep=1cm
+\textheight=22cm
+\textwidth=18cm
+\footskip=-1cm
+\oddsidemargin=0pt
+
+    %záhalví 
+\pagestyle{fancy}
+\fancyhead[R]{2023}
+\fancyhead[C]{Měsíční kvantum informací}
+\fancyhead[L]{Pravidla}
+
+    %záhlaví první strany
+\fancypagestyle{firststyle}
+{
+   \fancyhf{}
+   \renewcommand{\headrulewidth}{0pt}
+}
+\usepackage{xcolor, hyperref}
 
 \begin{document}
-Jak řešeit MKI?
+\section*{Pravidla}
+\begin{itemize}
+    \item K řešení můžete používat libovolnou literaturu, internet, kamarády\dots nic není zakázané
+    \item Svá řešení sepisujte na libovolný list papíru s čísly úloh a odpovědmi k nim, aby bylo rozpoznatelné, která odpověď patří k jaké otázce
+    \item V případě přiřazovaček a poznávaček využijte námi připravené číslování obrázků
+    \item Kromě odpovědí můžete k úlohám psát i různé poznámky, např. pokud se vám zdá, že máme někde chybu, nebo vás napadla zajímavá myšlenka během řešení, neváhejte se podělit! Může vám to vynést i nějaké bonusové body\dots
+    \item List s řešením v rohu podepište a uveďte třídu 
+    \item Svá řešení odevzdávejte na vrátnici nebo zasílejte elektronicky na náš mail: 
+    
+    \color{blue}
+    \href{mailto:kvantuminformaci@gmail.com}{kvantuminformaci@gmail.com}
+    \color{black}
+    \item Řešení můžete odevzdávat nejpozději do \textbf{posledního pracovního dne} v měsíci.
+    \item Nemusíte řešit všechno! Stačí si vybrat pár úloh, které se vám líbí (a ani jednotlivou úlohu nemusíte vyřešit celou)
+    \item Za každou vyřešenou sérii si můžete vysloužit jedničku z fyziky.
+    \item Soutěž se bude hodnotit ve čtyřech kategoriích:
+    \begin{enumerate}
+        \item \textbf{kategorie D}: prima a sekunda osmiletého gymnázia
+        \item \textbf{kategorie C}: tercie a kvarta osmiletého gymnázia a odpovídající ročníky šestiletého gymnázia
+        \item \textbf{kategorie B}: kvinta a sexta osmiletého gymnázia a odpovídající ročníky šestiletého gymnázia
+        \item \textbf{kategorie A}: septima a oktáva osmiletého gymnázia a odpovídající ročníky šestiletého gymnázia
+    \end{enumerate}
+    \item Na konci roku proběhne slavnostní vyhlášení, nejlepší řešitelé každé kategorie obdrží odměnu
+\end{itemize} 
 \end{document}
