@@ -6,6 +6,7 @@
 \sisetup{output-decimal-marker = {,}}
 \usepackage[czech]{babel}
 \usepackage{hyperref, xcolor}
+\usepackage{float}
 
 \hoffset=-0,71cm
 \voffset=1cm
@@ -52,17 +53,45 @@
 \import{../../problems/problem1-K/}{problem1-K.tex}
 \import{../../problems/problem1-B/}{problem1-B.tex}
 \newpage
-Seznámení a podrobné informace:\\
-%\includegraphics{../../../../propagace/qrcodes/introduction.png}
-\\
-Jak sepisovat řešení?, pravidla:\\
-%\includegraphics{../../../../propagace/qrcodes/instructions.png}
-\\
-Budeme rádi když vyplníte dotazník:\\
-%\includegraphics{../../../../propagace/qrcodes/dotaznik.png}
-\\
-\vspace*{\fill}
-\centering{\textit{Jindřich Anderle Vojtěch Kubrycht Michal Stroff\\}
+
+
+\begin{figure}[H]
+    \minipage{0,2\textwidth}
+      \includegraphics[scale=0.3]{../../../../propagace/qrcodes/introduction.png}
+      \begin{center}
+        Seznámení a podrobné informace
+        \end{center}
+    \endminipage\hfill
+    \minipage{0.2\textwidth}
+      \includegraphics[scale=0.3]{../../../../propagace/qrcodes/instructions.png}
+      \begin{center}
+        Jak sepisovat řešení, pravidla
+        \end{center}
+    \endminipage\hfill
+    \minipage{0.2\textwidth}%
+      \includegraphics[scale=0.3]{../../../../propagace/qrcodes/dotaznik.png}
+      \begin{center}
+        Budeme rádi když vyplníte dotazník
+      \end{center}
+    \endminipage
+  \end{figure}
+
+Seznámení a podrobné informace:
+\begin{figure}[H]
+\includegraphics[scale=0.3]{../../../../propagace/qrcodes/introduction.png}
+\end{figure}
+
+Jak sepisovat řešení, pravidla:
+\begin{figure}[H]
+\includegraphics[scale=0.3]{../../../../propagace/qrcodes/instructions.png}
+\end{figure}
+
+Budeme rádi když vyplníte dotazník:
+\begin{figure}[H]
+\includegraphics[scale=0.3]{../../../../propagace/qrcodes/dotaznik.png}
+\end{figure}
+
+\centering{\textit{Jindřich Anderle Vojtěch Kubrycht Michal Stroff\\}}
 \vspace*{\fill}
 \color{blue}{\href{kvantuminformaci@gmail.com}{kvantuminformaci@gmail.com}}
 \end{document}
