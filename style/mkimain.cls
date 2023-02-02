@@ -59,3 +59,39 @@
 
 \newcommand\@year{0}
 \renewcommand\year[1]{\renewcommand\@year{#1}}
+
+%generates first page for online version (#4 should be "../../../../propagace/logo/mkilogo.png") 
+\newcommand{\firstpageel}[4]{
+\thispagestyle{firstpage}
+\vspace*{\fill}
+\begin{center}
+\includegraphics[scale=1]{#4}\\
+\quad\\
+\textbf{\Huge{Měsíční kvantum informací}}\\
+\quad\\
+\LARGE{#1. série, #2 #3}
+\end{center}
+\vspace*{\fill}
+\newpage
+}
+
+%generates first page for printed version (#4 should be "../../../../propagace/logo/mkilogo.png", #5 should be "../../../../propagace/qrcodes/batch1el")
+\newcommand{\firstpageprint}[5]{
+\thispagestyle{firstpage}
+\vspace*{\fill}
+\begin{center}
+\includegraphics[scale=1]{#4}\\
+\quad\\
+\textbf{\Huge{Měsíční kvantum informací}}\\
+\quad\\
+\LARGE{#1. série, #2 #3}
+\vspace{1.5cm}
+\begin{figure}[H]
+    \centering{\includegraphics[scale=0.4]{#5}}
+
+    \centering{elektronická verze}
+\end{figure}
+\end{center}
+\vspace*{\fill}
+\newpage
+}
