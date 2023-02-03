@@ -16,6 +16,7 @@
 \RequirePackage{xcolor}
 \RequirePackage{float}
 \RequirePackage{lastpage}
+\RequirePackage{indentfirst}
 \sisetup{output-decimal-marker = {,}}
 
 %options
@@ -34,6 +35,7 @@
 \setlength{\footskip}{1.5cm}
 \setlength{\oddsidemargin}{0cm}
 \setlength{\headheight}{14.5pt}
+\setlength{\parindent}{20pt}
 
 %záhlaví
 \RequirePackage{fancyhdr}
@@ -60,36 +62,72 @@
 \newcommand\@year{0}
 \renewcommand\year[1]{\renewcommand\@year{#1}}
 
-%generates first page for online version (#4 should be "../../../../propagace/logo/mkilogo.png") 
-\newcommand{\firstpageel}[4]{
+%generates first page for online version
+\newcommand{\firstpageel}[1]{
 \thispagestyle{firstpage}
 \vspace*{\fill}
 \begin{center}
-\includegraphics[scale=1]{#4}\\
+\includegraphics[scale=1]{#1}\\
 \quad\\
 \textbf{\Huge{Měsíční kvantum informací}}\\
 \quad\\
-\LARGE{#1. série, #2 #3}
+\LARGE{\@series.~série, \@month ~\@year}
 \end{center}
 \vspace*{\fill}
 \newpage
 }
 
-%generates first page for printed version (#4 should be "../../../../propagace/logo/mkilogo.png", #5 should be "../../../../propagace/qrcodes/batch1el")
-\newcommand{\firstpageprint}[5]{
+%generates first page for printed version
+\newcommand{\firstpageprint}[2]{
 \thispagestyle{firstpage}
 \vspace*{\fill}
 \begin{center}
-\includegraphics[scale=1]{#4}\\
+\includegraphics[scale=1]{#1}\\
 \quad\\
 \textbf{\Huge{Měsíční kvantum informací}}\\
 \quad\\
-\LARGE{#1. série, #2 #3}
+\LARGE{\@series.~série, \@month ~\@year}
 \vspace{1.5cm}
 \begin{figure}[H]
-    \centering{\includegraphics[scale=0.4]{#5}}
+    \centering{\includegraphics[scale=0.4]{#2}}
 
-    \centering{elektronická verze}
+    \centering{Elektronická verze}
+\end{figure}
+\end{center}
+\vspace*{\fill}
+\newpage
+}
+
+%generates first page for online version of solution
+\newcommand{\solfirstpageel}[1]{
+\thispagestyle{firstpage}
+\vspace*{\fill}
+\begin{center}
+\includegraphics[scale=1]{#1}\\
+\quad\\
+\textbf{\Huge{Měsíční kvantum informací}}\\
+\quad\\
+\LARGE{řešení~\@series.~série, \@month ~\@year}
+\end{center}
+\vspace*{\fill}
+\newpage
+}
+
+%generates first page for printed version
+\newcommand{\solfirstpageprint}[2]{
+\thispagestyle{firstpage}
+\vspace*{\fill}
+\begin{center}
+\includegraphics[scale=1]{#1}\\
+\quad\\
+\textbf{\Huge{Měsíční kvantum informací}}\\
+\quad\\
+\LARGE{řešení~\@series.~série, \@month ~\@year}
+\vspace{1.5cm}
+\begin{figure}[H]
+    \centering{\includegraphics[scale=0.4]{#2}}
+
+    \centering{Elektronická verze řešení}
 \end{figure}
 \end{center}
 \vspace*{\fill}
