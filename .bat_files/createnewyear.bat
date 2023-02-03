@@ -1,8 +1,8 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set /p Year=Enter current year:
-set /p MKIyear=Enter current MKI year:
+set /p Year=Enter calendar year:
+set /p MKIyear=Enter MKI year:
 
 set month[0]=null
 set month[1]=leden
@@ -18,6 +18,10 @@ set month[10]=říjen
 set month[11]=listopad
 set month[12]=prosinec
 
+cd ..\
+md "MKI%MKIyear%"
+
+cd MKI%MKIyear%
 
 ::for loop creates all folders
 for /l %%x in (1, 1, 12) do (
@@ -560,3 +564,6 @@ echo \section*{TextSol%%y-U3}
 echo \end{document}
 )>"solution%%y-U3.tex"
 )
+
+cd ..\..\..\..\propagace\qrcodes
+md "MKI%MKIyear%"
