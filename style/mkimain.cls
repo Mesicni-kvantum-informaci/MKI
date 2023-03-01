@@ -36,6 +36,8 @@
 \setlength{\oddsidemargin}{0cm}
 \setlength{\headheight}{14.5pt}
 \setlength{\parindent}{20pt}
+%\paperheight=297mm
+%\paperwidth=210mm
 
 %záhlaví
 \RequirePackage{fancyhdr}
