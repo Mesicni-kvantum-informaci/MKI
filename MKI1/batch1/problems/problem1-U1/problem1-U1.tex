@@ -1,25 +1,25 @@
-\documentclass[crop=false]{standalone}
-\usepackage{blindtext, mdframed, graphicx, float}
+\documentclass{../../../../style/mkimain}
 
-\headheight=14.5pt
-\addtolength{\topmargin}{-2.5pt}
+\series{1}
+\month{únor}
+\year{2023}
 
 \begin{document}
 \section*{I.U1 Slavné osobnosti fyziky}
-K obrázkům níže přiřaďte jména vyobrazených fyziků a jejich přínos vědě (využijte pojmy z následujích rámečků).
-
-\begin{mdframed}[frametitle={Jména}, frametitlealignment=\center, ]
+\noindent K obrázkům níže přiřaďte jména vyobrazených fyziků a jejich přínos vědě (využijte pojmy z následujích rámečků).
+\\
+\begin{mdframed}[frametitle={Jména}, frametitlealignment=\center, innerbottommargin=5px]
     \begin{center}
         Albert~Einstein, Isaac~Newton, Michael~Faraday, Stephen~Hawking, Erwin~Schrödinger, Marie~Curie-Skłodowska
     \end{center}
 \end{mdframed}
-\vspace{-0,2cm}
-\begin{mdframed}[frametitle={Díla}, frametitlealignment=\center]
+\vspace{0.5cm}
+\begin{mdframed}[frametitle={Díla}, frametitlealignment=\center, innerbottommargin=5px]
     \begin{center}
         speciální~princip~relativity, gravitační~zákon, elektromagnetická~indukce, stanovení~teploty~černé~díry, myšlenkový~experiment~s~kočkou~v~krabici, teorie~radioaktivity
     \end{center}
 \end{mdframed}
-
+\vspace{1cm}
 \begin{figure}[H]
   \minipage{0,2\textwidth}
     \includegraphics[width=\linewidth]{images/albert-einstein.jpeg}
@@ -40,7 +40,7 @@ K obrázkům níže přiřaďte jména vyobrazených fyziků a jejich přínos v
     \end{center}
   \endminipage
 \end{figure}
-
+\vspace{0.5cm}
 \begin{figure}[H]
   \minipage{0.2\textwidth}
     \includegraphics[width=\linewidth]{images/marie-curie-sklodowska.jpg}
