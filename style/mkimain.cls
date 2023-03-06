@@ -17,7 +17,11 @@
 \RequirePackage{float}
 \RequirePackage{lastpage}
 \RequirePackage{indentfirst}
+\usepackage{enumerate}
+\usepackage{pgfplots}
+\usepackage{tikz}
 \sisetup{output-decimal-marker = {,}}
+\pgfplotsset{compat=1.18, width=10cm}
 
 %options
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
