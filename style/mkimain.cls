@@ -18,6 +18,8 @@
 \RequirePackage{lastpage}
 \RequirePackage{indentfirst}
 \RequirePackage{mhchem}
+\RequirePackage{tikz}
+\usetikzlibrary{arrows,shapes.gates.logic.US,shapes.gates.logic.IEC,calc,babel}
 \sisetup{output-decimal-marker = {,}}
 
 %options
