@@ -1,8 +1,5 @@
 \documentclass{../../../../style/mkimain}
-\usepackage{enumitem}
-\usepackage{pgfplots}
-\usepackage{tikz}
-\pgfplotsset{compat=1.18, width=10cm}
+
 \series{2}
 \month{březen}
 \year{2023}
@@ -67,15 +64,21 @@ Jak následně ukázal všem známý Albert Einstein, kvantování není pouze m
 \\
 \begin{center}
 \begin{tikzpicture}
-    \begin{axis}[xmin=0.05, xmax=1.7, ymin=0, ymax=2.5, axis lines=middle, xlabel=$\lambda$,
+\begin{axis}[
+    xmin=0.05, 
+    xmax=1.7, 
+    ymin=0, 
+    ymax=2.5, 
+    axis lines=middle, 
+    xlabel=$\lambda$, 
     ylabel=$\frac{\mathrm{d}I}{\mathrm{d}\omega}$, 
-    title={Planckův vyzařovací zákon}]
-    \addplot[color=blue, samples=240]{x^(-3)*(exp(x^(-1))-1)^(-1)};
-    \end{axis}
-    \end{tikzpicture}
+    title={Planckův vyzařovací zákon}, 
+    restrict y to domain=-1:2.5,
+    label style={font=\large}]
+\addplot[color=blue, samples=1000]{x^(-3)*(exp(x^(-1))-1)^(-1)};
+\end{axis}
+\end{tikzpicture}
 \end{center}
-\\
-\\
 \textbf{Úloha:}
 \\
 \\
@@ -85,15 +88,15 @@ Existuje však jedna vlnová délka, na které dané těleso vyzařuje nejvíce,
 A právě tuto vlnovou délku $\lambda_\mathrm{max}$ také nejlépe vidíme.
 \begin{enumerate}
     \item Jaký je vztah mezi $\lambda_\mathrm{max}$ a teplotou příslušného tělesa?
-    \begin{enumerate}[label=\alph*)]
+    \begin{enumerate}[a)]
         \item $\lambda_\mathrm{max}$ je přímo úměrná teplotě tělesa
         \item $\lambda_\mathrm{max}$ je nepřímo úměrná teplotě tělesa
     \end{enumerate}
     \item Svou předchozí odpověd se pokuste zdůvodnit úvahou nebo prokázat na nějakém jevu v přírodě.
     \\\\
-    \textbf{Nápověda:} Zamyslete se například nad tím, co dává hvězdám jejich barvu.
+    \emph{Nápověda}: Zamyslete se například nad tím, co dává hvězdám jejich barvu.
     \item Jak se nazývá zákon, který dává do vztahu $\lambda_\mathrm{max}$ a teplotu vyzařujícího tělesa?
-    \begin{enumerate}[label=\alph*)]
+    \begin{enumerate}[a)]
         \item Stefan–Boltzmannův zákon
         \item De Broglieho vlna
         \item Einsteinova rovnice fotoefektu
