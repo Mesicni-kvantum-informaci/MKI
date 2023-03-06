@@ -9,7 +9,7 @@
 
 \section*{II.U3 Logická hradla}
 \noindent 
-Pojmenujte oranžově zvýrazněná logická hradla a určete pravdivostní hodnotu signálu v místech označených otazníkem.
+Pojmenujte oranžově zvýrazněná logická hradla a určete pravdivostní hodnotu signálu v místech $a$, $b$, $c$ a $d$.
 \begin{center}
 \begin{tikzpicture}[scale=1.7, thick]
     \node (A) at (0, 0) {\small{1}};
@@ -49,10 +49,10 @@ Pojmenujte oranžově zvýrazněná logická hradla a určete pravdivostní hodn
 \node [draw=black, thick, shape=rectangle, minimum width=0.45cm, minimum height=0.45cm, anchor=center, fill=white] at (B) {};
 \node [draw=black, thick, shape=rectangle, minimum width=0.45cm, minimum height=0.45cm, anchor=center, fill=white] at (C) {};
 
-\node (D) at ($(and2.output) + (0.7, 0)$) {\small{?}};
-\node (?1) at ($(xor1.output) + (0.2, 0)$) {\small{?}};
-\node (?2) at ($(or1.output) + (0.2, 0)$) {\small{?}};
-\node (?3) at ($(not2.output) + (0.3, 0.45)$) {\small{?}};
+\node (D) at ($(and2.output) + (0.7, 0)$) {\small{$d$}};
+\node (?1) at ($(xor1.output) + (0.2, 0)$) {\small{$a$}};
+\node (?2) at ($(or1.output) + (0.2, 0)$) {\small{$c$}};
+\node (?3) at ($(not2.output) + (0.3, 0.45)$) {\small{$b$}};
 \node (A) at (0, 0) {\small{1}};
 \node (B) at (0, -1) {\small{0}};
 \node (C) at (0, -2) {\small{1}};  
