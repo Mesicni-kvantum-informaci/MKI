@@ -64,18 +64,22 @@ Jak následně ukázal všem známý Albert Einstein, kvantování není pouze m
 \\
 \begin{center}
 \begin{tikzpicture}
+\node at (1.5,-0.43) {\large{$\lambda_{\mathrm{max}}$}};
+\node at (8.2,-0.43) {\large{$\lambda$}};
+\node at (0.5,6.5) {\Large{$\frac{\mathrm{d}I}{\mathrm{d}\lambda}$}};
 \begin{axis}[
     xmin=0.05, 
-    xmax=1.7, 
+    xmax=1, 
     ymin=0, 
-    ymax=2.5, 
-    axis lines=middle, 
-    xlabel=$\lambda$, 
-    ylabel=$\frac{\mathrm{d}I}{\mathrm{d}\omega}$, 
+    ymax=2, 
+    axis lines=middle,  
     title={Planckův vyzařovací zákon}, 
     restrict y to domain=-1:2.5,
-    label style={font=\large}]
-\addplot[color=blue, samples=1000]{x^(-3)*(exp(x^(-1))-1)^(-1)};
+    label style={font=\large},
+    ticks=none,
+    x label style={at={(current axis.right of origin)},anchor=north east, below=2mm}]
+\addplot[color=blue, samples=2000]{(x^(-5)*(exp(x^(-1))-1)^(-1))/(10*1.5)};
+\draw [densely dashed] (axis cs:0.2014,1.4134) -- (axis cs:0.2014,0);
 \end{axis}
 \end{tikzpicture}
 \end{center}
