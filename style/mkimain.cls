@@ -19,8 +19,11 @@
 \RequirePackage{indentfirst}
 \RequirePackage{mhchem}
 \RequirePackage{tikz}
+\RequirePackage{enumerate}
+\RequirePackage{pgfplots}
 \usetikzlibrary{arrows,shapes.gates.logic.US,shapes.gates.logic.IEC,calc,babel}
 \sisetup{output-decimal-marker = {,}}
+\pgfplotsset{compat=1.18, width=10cm}
 
 %options
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
@@ -28,7 +31,6 @@
 \LoadClass[12pt]{article}
 
 %page layout
-%\setlength{\hoffset}{-0.71cm}
 \setlength{\voffset}{1cm}
 \setlength{\headsep}{1cm}
 \setlength{\topmargin}{-2cm}
