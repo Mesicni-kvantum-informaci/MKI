@@ -143,3 +143,10 @@
 \vspace*{\fill}
 \newpage
 }
+
+%generates horizontal line with custom spacing 
+\newcommand{\klein}{
+\vspace{0.3cm}
+\hrule
+\vspace{0.7cm}
+}
