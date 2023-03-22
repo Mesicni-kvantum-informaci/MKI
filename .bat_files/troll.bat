@@ -4,6 +4,8 @@ setlocal enabledelayedexpansion
 
 set /p Year=Enter calendar year:
 
+cd ..\MKI1
+
 ::creates 4 folders in each batch folder (main, mainsol, problems, solutions)
 	md "trollbatch3"/"main" "trollbatch3"/"mainsol" "trollbatch3"/"problems" "trollbatch3"/"solutions"
 
@@ -14,27 +16,27 @@ set /p Year=Enter calendar year:
 	md "trollbatch3"/"mainsol"/"trollbatch3solel" "trollbatch3"/"mainsol"/"trollbatch3solprint"
 
  ::divides problems into 6 folders (problemn-A, problemn-B, problemn-K, problemn-U1, problemn-U2, problemn-U3)
- md "trollbatch3"/"problems"/"problemT3--A"
- md "trollbatch3"/"problems"/"problemT3--B"
- md "trollbatch3"/"problems"/"problemT3--K"
- md "trollbatch3"/"problems"/"problemT3--U1"
- md "trollbatch3"/"problems"/"problemT3--U2"
- md "trollbatch3"/"problems"/"problemT3--U3"
+ md "trollbatch3"/"problems"/"problemT3-A"
+ md "trollbatch3"/"problems"/"problemT3-B"
+ md "trollbatch3"/"problems"/"problemT3-K"
+ md "trollbatch3"/"problems"/"problemT3-U1"
+ md "trollbatch3"/"problems"/"problemT3-U2"
+ md "trollbatch3"/"problems"/"problemT3-U3"
 
  ::divides solutions into 6 folders (solutionn-A, solutionn-B, solutionn-K, solutionn-U1, solutionn-U2, solutionn-U3)
- md "trollbatch3"/"solutions"/"solutionT3--A"
- md "trollbatch3"/"solutions"/"solutionT3--B"
- md "trollbatch3"/"solutions"/"solutionT3--K"
- md "trollbatch3"/"solutions"/"solutionT3--U1"
- md "trollbatch3"/"solutions"/"solutionT3--U2"
- md "trollbatch3"/"solutions"/"solutionT3--U3"
+ md "trollbatch3"/"solutions"/"solutionT3-A"
+ md "trollbatch3"/"solutions"/"solutionT3-B"
+ md "trollbatch3"/"solutions"/"solutionT3-K"
+ md "trollbatch3"/"solutions"/"solutionT3-U1"
+ md "trollbatch3"/"solutions"/"solutionT3-U2"
+ md "trollbatch3"/"solutions"/"solutionT3-U3"
 
 cd trollbatch3
 (
 echo # TrollBatch3 - problems
 echo:
 echo ^| úloha ^| název ^| téma ^| jméno ^|
-echo ^|-------^|-------^|------^|-------^|
+echo ^|-------^|-------^|-------^|-------^|
 echo ^| T3-U1  ^|       ^|      ^|       ^|
 echo ^| T3-U2  ^|       ^|      ^|       ^|
 echo ^| T3-U3  ^|       ^|      ^|       ^|
