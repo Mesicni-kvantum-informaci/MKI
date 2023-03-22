@@ -41,11 +41,13 @@
 \setlength{\oddsidemargin}{0cm}
 \setlength{\headheight}{14.5pt}
 \setlength{\parindent}{20pt}
+
 \paperwidth=210mm
 \paperheight=297mm
 
 \setlength\oddsidemargin{\dimexpr(\paperwidth-\textwidth)/2 - 1in\relax}
 \setlength\evensidemargin{\oddsidemargin}
+
 
 %záhlaví
 \RequirePackage{fancyhdr}
