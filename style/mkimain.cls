@@ -21,6 +21,7 @@
 \RequirePackage{tikz}
 \RequirePackage{enumerate}
 \RequirePackage{pgfplots}
+\RequirePackage{catchfilebetweentags}
 \usetikzlibrary{arrows,shapes.gates.logic.US,shapes.gates.logic.IEC,calc,babel}
 \sisetup{output-decimal-marker = {,}}
 \pgfplotsset{compat=1.18, width=10cm}
@@ -153,9 +154,28 @@
 \vspace{0.7cm}
 }
 
-%
+%problem origin command
 \newcommand{\proborigin}[1]{
 \begin{flushright}
     \textit{#1}
 \end{flushright}
 }
+
+%defines choice environment for questions
+\newcounter{choice}
+\renewcommand\thechoice{\alph{choice}}
+\newcommand\choicelabel{\thechoice)}
+
+\newenvironment{choices}%
+  {\list{\choicelabel}%
+     {\usecounter{choice}\def\makelabel##1{\hss\llap{##1}}%
+       \settowidth{\leftmargin}{W.\hskip\labelsep\hskip -0.4em}%
+       \def\choice{%
+         \item
+       } % choice
+       \labelwidth\leftmargin\advance\labelwidth-\labelsep
+       \topsep=5pt
+       \partopsep=0pt
+     }%
+  }%
+  {\endlist}
