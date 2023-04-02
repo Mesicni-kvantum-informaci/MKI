@@ -17,7 +17,7 @@
 \RequirePackage{float}
 \RequirePackage{lastpage}
 \RequirePackage{indentfirst}
-\RequirePackage{mhchem}
+\RequirePackage[version=4]{mhchem}
 \RequirePackage{tikz}
 \RequirePackage{enumerate}
 \RequirePackage{pgfplots}
@@ -148,7 +148,14 @@
 
 %generates horizontal line with custom spacing 
 \newcommand{\klein}{
-\vspace{0.3cm}
+\vspace{0.05cm}
 \hrule
 \vspace{0.7cm}
+}
+
+%
+\newcommand{\proborigin}[1]{
+\begin{flushright}
+    \textit{#1}
+\end{flushright}
 }

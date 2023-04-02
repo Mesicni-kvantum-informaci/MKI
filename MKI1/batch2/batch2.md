@@ -7,4 +7,4 @@
 | 2-U3  | Logická hradla | Logická hradla | Vojta |
 | 2-A   | Polární záře | Polární záře | Vojta |
 | 2-K   | Není všechno teplé, co se třpytí! | Historie kvantové fyziky (Planck) | Michal |
-| 2-B   |  | Křeček | Jindra |
+| 2-B   | Zase ty světla! | Křeček | Jindra |

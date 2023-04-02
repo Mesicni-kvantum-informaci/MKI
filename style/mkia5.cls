@@ -17,7 +17,7 @@
 \RequirePackage{float}
 \RequirePackage{lastpage}
 \RequirePackage{indentfirst}
-\RequirePackage{mhchem}
+\RequirePackage[version=4]{mhchem}
 \RequirePackage{tikz}
 \RequirePackage{enumerate}
 \RequirePackage{pgfplots}
@@ -57,13 +57,6 @@
 \fancyhead[R]{\@month ~\@year}
 \fancyhead[C]{Měsíční kvantum informací}
 \fancyhead[L]{\@series.~série}
-  
-%záhlaví první strany
-\fancypagestyle{firstpage}
-{
-   \fancyhf{}
-   \renewcommand{\headrulewidth}{0pt}
-}
 
 %new comands
 \newcommand\@series{0}
@@ -74,78 +67,6 @@
 
 \newcommand\@year{0}
 \renewcommand\year[1]{\renewcommand\@year{#1}}
-
-%generates first page for online version
-\newcommand{\firstpageel}[1]{
-\thispagestyle{firstpage}
-\vspace*{\fill}
-\begin{center}
-\includegraphics[scale=1]{#1}\\
-\quad\\
-\textbf{\Huge{Měsíční kvantum informací}}\\
-\quad\\
-\LARGE{\@series.~série, \@month ~\@year}
-\end{center}
-\vspace*{\fill}
-\newpage
-}
-
-%generates first page for printed version
-\newcommand{\firstpageprint}[2]{
-\thispagestyle{firstpage}
-\vspace*{\fill}
-\begin{center}
-\includegraphics[scale=1]{#1}\\
-\quad\\
-\textbf{\Huge{Měsíční kvantum informací}}\\
-\quad\\
-\LARGE{\@series.~série, \@month ~\@year}
-\vspace{1.5cm}
-\begin{figure}[H]
-    \centering{\includegraphics[scale=0.4]{#2}}
-
-    \centering{Elektronická verze}
-\end{figure}
-\end{center}
-\vspace*{\fill}
-\newpage
-}
-
-%generates first page for online version of solution
-\newcommand{\solfirstpageel}[1]{
-\thispagestyle{firstpage}
-\vspace*{\fill}
-\begin{center}
-\includegraphics[scale=1]{#1}\\
-\quad\\
-\textbf{\Huge{Měsíční kvantum informací}}\\
-\quad\\
-\LARGE{řešení~\@series.~série, \@month ~\@year}
-\end{center}
-\vspace*{\fill}
-\newpage
-}
-
-%generates first page for printed version
-\newcommand{\solfirstpageprint}[2]{
-\thispagestyle{firstpage}
-\vspace*{\fill}
-\begin{center}
-\includegraphics[scale=1]{#1}\\
-\quad\\
-\textbf{\Huge{Měsíční kvantum informací}}\\
-\quad\\
-\LARGE{řešení~\@series.~série, \@month ~\@year}
-\vspace{1.5cm}
-\begin{figure}[H]
-    \centering{\includegraphics[scale=0.4]{#2}}
-
-    \centering{Elektronická verze řešení}
-\end{figure}
-\end{center}
-\vspace*{\fill}
-\newpage
-}
 
 %generates horizontal line with custom spacing 
 \newcommand{\klein}{
