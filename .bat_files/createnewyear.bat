@@ -169,7 +169,25 @@ echo \month{%month[1]%}
 echo \year{%Year%}
 echo:
 echo \begin{document}
+echo %%^<*header^>
 echo \section*{%num[1]%.A Header1-A}
+echo %%^</header^>
+echo:
+echo:
+echo %%\\
+echo %%\\
+echo %%\textbf{Úloha:}
+echo:
+echo %%^<*task^>
+echo:
+echo %%\begin{enumerate}[\noindent {}]
+echo %%\item otazka
+echo %%  \begin{choices}
+echo %%    \choice
+echo %%  \end{choices}
+echo %%\end{enumerate}
+echo:
+echo %%^</task^>
 echo \end{document}
 )>"problem1-A.tex"
 
@@ -182,8 +200,14 @@ echo \month{%month[1]%}
 echo \year{%Year%}
 echo:
 echo \begin{document}
+echo %%^<*header^>
 echo \section*{%num[1]%.B Header1-B}
-echo \noindent 
+echo %%^</header^>
+echo %%^<*task^>
+echo:
+echo \noindent
+echo:
+echo %%^</task^> 
 echo \end{document}
 )>"problem1-B.tex"
 
@@ -196,7 +220,25 @@ echo \month{%month[1]%}
 echo \year{%Year%}
 echo:
 echo \begin{document}
+echo %%^<*header^>
 echo \section*{%num[1]%.K Header1-K}
+echo %%^</header^>
+echo:
+echo:
+echo %%\\
+echo %%\\
+echo %%\textbf{Úloha:}
+echo:
+echo %%^<*task^>
+echo:
+echo %%\begin{enumerate}[\noindent {}]
+echo %%\item otazka
+echo %%  \begin{choices}
+echo %%    \choice
+echo %%  \end{choices}
+echo %%\end{enumerate}
+echo:
+echo %%^</task^>
 echo \end{document}
 )>"problem1-K.tex"
 
@@ -209,8 +251,14 @@ echo \month{%month[1]%}
 echo \year{%Year%}
 echo:
 echo \begin{document}
+echo %%^<*header^>
 echo \section*{%num[1]%.U1 Header1-U1}
-echo \noindent 
+echo %%^</header^>
+echo %%^<*task^>
+echo:
+echo \noindent
+echo:
+echo %%^</task^> 
 echo \end{document}
 )>"problem1-U1.tex"
 
@@ -223,8 +271,14 @@ echo \month{%month[1]%}
 echo \year{%Year%}
 echo:
 echo \begin{document}
+echo %%^<*header^>
 echo \section*{%num[1]%.U2 Header1-U2}
-echo \noindent 
+echo %%^</header^>
+echo %%^<*task^>
+echo:
+echo \noindent
+echo:
+echo %%^</task^> 
 echo \end{document}
 )>"problem1-U2.tex"
 
@@ -237,8 +291,14 @@ echo \month{%month[1]%}
 echo \year{%Year%}
 echo:
 echo \begin{document}
+echo %%^<*header^>
 echo \section*{%num[1]%.U3 Header1-U3}
-echo \noindent 
+echo %%^</header^>
+echo %%^<*task^>
+echo:
+echo \noindent
+echo:
+echo %%^</task^> 
 echo \end{document}
 )>"problem1-U3.tex"
 
@@ -252,7 +312,10 @@ echo \month{%month[1]%}
 echo \year{%Year%}
 echo:
 echo \begin{document}
-echo \section*{%num[1]%.A HeaderSol1-A}
+echo \ExecuteMetaData[../../problems/problem1-A/problem1-A.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem1-A/problem1-A.tex]{task}
+echo \proborigin{}
+echo \klein
 echo \end{document}
 )>"solution1-A.tex"
 
@@ -265,7 +328,10 @@ echo \month{%month[1]%}
 echo \year{%Year%}
 echo:
 echo \begin{document}
-echo \section*{%num[1]%.B HeaderSol1-B}
+echo \ExecuteMetaData[../../problems/problem1-B/problem1-B.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem1-B/problem1-B.tex]{task}
+echo \proborigin{}
+echo \klein
 echo \end{document}
 )>"solution1-B.tex"
 
@@ -278,7 +344,10 @@ echo \month{%month[1]%}
 echo \year{%Year%}
 echo:
 echo \begin{document}
-echo \section*{%num[1]%.K HeaderSol1-K}
+echo \ExecuteMetaData[../../problems/problem1-K/problem1-K.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem1-K/problem1-K.tex]{task}
+echo \proborigin{}
+echo \klein
 echo \end{document}
 )>"solution1-K.tex"
 
@@ -291,7 +360,10 @@ echo \month{%month[1]%}
 echo \year{%Year%}
 echo:
 echo \begin{document}
-echo \section*{%num[1]%.U1 HeaderSol1-U1}
+echo \ExecuteMetaData[../../problems/problem1-U1/problem1-U1.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem1-U1/problem1-U1.tex]{task}
+echo \proborigin{}
+echo \klein
 echo \end{document}
 )>"solution1-U1.tex"
 
@@ -304,7 +376,10 @@ echo \month{%month[1]%}
 echo \year{%Year%}
 echo:
 echo \begin{document}
-echo \section*{%num[1]%.U2 HeaderSol1-U2}
+echo \ExecuteMetaData[../../problems/problem1-U2/problem1-U2.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem1-U2/problem1-U2.tex]{task}
+echo \proborigin{}
+echo \klein
 echo \end{document}
 )>"solution1-U2.tex"
 
@@ -317,7 +392,10 @@ echo \month{%month[1]%}
 echo \year{%Year%}
 echo:
 echo \begin{document}
-echo \section*{%num[1]%.U3 HeaderSol1-U3}
+echo \ExecuteMetaData[../../problems/problem1-U3/problem1-U3.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem1-U3/problem1-U3.tex]{task}
+echo \proborigin{}
+echo \klein
 echo \end{document}
 )>"solution1-U3.tex"
 
@@ -426,7 +504,25 @@ echo \month{!month[%%y]!}
 echo \year{%Year%}
 echo:
 echo \begin{document}
+echo %%^<*header^>
 echo \section*{!num[%%y]!.A Header%%y-A}
+echo %%^</header^>
+echo:
+echo:
+echo %%\\
+echo %%\\
+echo %%\textbf{Úloha:}
+echo:
+echo %%^<*task^>
+echo:
+echo %%\begin{enumerate}[\noindent {}]
+echo %%\item otazka
+echo %%  \begin{choices}
+echo %%    \choice
+echo %%  \end{choices}
+echo %%\end{enumerate}
+echo:
+echo %%^</task^>
 echo \end{document}
 )>"problem%%y-A.tex"
 
@@ -439,8 +535,14 @@ echo \month{!month[%%y]!}
 echo \year{%Year%}
 echo:
 echo \begin{document}
+echo %%^<*header^>
 echo \section*{!num[%%y]!.B Header%%y-B}
-echo \noindent 
+echo %%^</header^>
+echo %%^<*task^>
+echo:
+echo \noindent
+echo:
+echo %%^</task^> 
 echo \end{document}
 )>"problem%%y-B.tex"
 
@@ -453,7 +555,25 @@ echo \month{!month[%%y]!}
 echo \year{%Year%}
 echo:
 echo \begin{document}
+echo %%^<*header^>
 echo \section*{!num[%%y]!.K Header%%y-K}
+echo %%^</header^>
+echo:
+echo:
+echo %%\\
+echo %%\\
+echo %%\textbf{Úloha:}
+echo:
+echo %%^<*task^>
+echo:
+echo %%\begin{enumerate}[\noindent {}]
+echo %%\item otazka
+echo %%  \begin{choices}
+echo %%    \choice
+echo %%  \end{choices}
+echo %%\end{enumerate}
+echo:
+echo %%^</task^>
 echo \end{document}
 )>"problem%%y-K.tex"
 
@@ -466,8 +586,14 @@ echo \month{!month[%%y]!}
 echo \year{%Year%}
 echo:
 echo \begin{document}
+echo %%^<*header^>
 echo \section*{!num[%%y]!.U1 Header%%y-U1}
-echo \noindent 
+echo %%^</header^>
+echo %%^<*task^>
+echo:
+echo \noindent
+echo:
+echo %%^</task^> 
 echo \end{document}
 )>"problem%%y-U1.tex"
 
@@ -480,8 +606,14 @@ echo \month{!month[%%y]!}
 echo \year{%Year%}
 echo:
 echo \begin{document}
+echo %%^<*header^>
 echo \section*{!num[%%y]!.U2 Header%%y-U2}
-echo \noindent 
+echo %%^</header^>
+echo %%^<*task^>
+echo:
+echo \noindent
+echo:
+echo %%^</task^> 
 echo \end{document}
 )>"problem%%y-U2.tex"
 
@@ -494,8 +626,14 @@ echo \month{!month[%%y]!}
 echo \year{%Year%}
 echo:
 echo \begin{document}
+echo %%^<*header^>
 echo \section*{!num[%%y]!.U3 Header%%y-U3}
-echo \noindent 
+echo %%^</header^>
+echo %%^<*task^>
+echo:
+echo \noindent
+echo:
+echo %%^</task^> 
 echo \end{document}
 )>"problem%%y-U3.tex"
 
@@ -509,7 +647,10 @@ echo \month{!month[%%y]!}
 echo \year{%Year%}
 echo:
 echo \begin{document}
-echo \section*{!num[%%y]!.A HeaderSol%%y-A}
+echo \ExecuteMetaData[../../problems/problem%%y-A/problem%%y-A.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem%%y-A/problem%%y-A.tex]{task}
+echo \proborigin{}
+echo \klein
 echo \end{document}
 )>"solution%%y-A.tex"
 
@@ -522,7 +663,10 @@ echo \month{!month[%%y]!}
 echo \year{%Year%}
 echo:
 echo \begin{document}
-echo \section*{!num[%%y]!.B HeaderSol%%y-B}
+echo \ExecuteMetaData[../../problems/problem%%y-B/problem%%y-B.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem%%y-B/problem%%y-B.tex]{task}
+echo \proborigin{}
+echo \klein
 echo \end{document}
 )>"solution%%y-B.tex"
 
@@ -535,7 +679,10 @@ echo \month{!month[%%y]!}
 echo \year{%Year%}
 echo:
 echo \begin{document}
-echo \section*{!num[%%y]!.K HeaderSol%%y-K}
+echo \ExecuteMetaData[../../problems/problem%%y-K/problem%%y-K.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem%%y-K/problem%%y-K.tex]{task}
+echo \proborigin{}
+echo \klein
 echo \end{document}
 )>"solution%%y-K.tex"
 
@@ -548,7 +695,10 @@ echo \month{!month[%%y]!}
 echo \year{%Year%}
 echo:
 echo \begin{document}
-echo \section*{!num[%%y]!.U1 HeaderSol%%y-U1}
+echo \ExecuteMetaData[../../problems/problem%%y-U1/problem%%y-U1.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem%%y-U1/problem%%y-U1.tex]{task}
+echo \proborigin{}
+echo \klein
 echo \end{document}
 )>"solution%%y-U1.tex"
 
@@ -561,7 +711,10 @@ echo \month{!month[%%y]!}
 echo \year{%Year%}
 echo:
 echo \begin{document}
-echo \section*{!num[%%y]!.U2 HeaderSol%%y-U2}
+echo \ExecuteMetaData[../../problems/problem%%y-U2/problem%%y-U2.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem%%y-U2/problem%%y-U2.tex]{task}
+echo \proborigin{}
+echo \klein
 echo \end{document}
 )>"solution%%y-U2.tex"
 
@@ -574,7 +727,10 @@ echo \month{!month[%%y]!}
 echo \year{%Year%}
 echo:
 echo \begin{document}
-echo \section*{!num[%%y]!.U3 HeaderSol%%y-U3}
+echo \ExecuteMetaData[../../problems/problem%%y-U3/problem%%y-U3.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem%%y-U3/problem%%y-U3.tex]{task}
+echo \proborigin{}
+echo \klein
 echo \end{document}
 )>"solution%%y-U3.tex"
 )
