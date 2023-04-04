@@ -5,78 +5,8 @@
 \year{2023}
 
 \begin{document}
-\tikzstyle{branch}=[fill,shape=circle,minimum size=2.75pt,inner sep=0pt]
-
-\section*{II.U3 Logická hradla}
-\noindent 
-Pojmenujte oranžově zvýrazněná logická hradla a určete pravdivostní hodnotu signálu v místech $a$, $b$, $c$ a $d$.
+\ExecuteMetaData[../../problems/problem2-U3/problem2-U3.tex]{header}
+\noindent\ExecuteMetaData[../../problems/problem2-U3/problem2-U3.tex]{task}
 \proborigin{}
 \klein
-\begin{center}
-\begin{tikzpicture}[scale=1.7, thick]
-    \node (A) at (0, 0) {\small{1}};
-    \node (B) at (0, -1) {\small{0}};
-    \node (C) at (0, -2) {\small{1}};
-
-\node[xor gate US, draw=orange, anchor=input 1] at ($(A) + (4, 0)$) (xor1) {};
-\node[not gate US, draw=orange] at ($(B) + (2, 0.5)$) (not1) {};
-\node[not gate US, draw] at ($(C) + (1, 0)$) (not2) {};
-\node[and gate US, draw=orange, anchor=input 1] at ($(B) + (2, 0)$) (and1) {};
-\node[or gate US, draw, anchor=input 1] at ($(and1.output) + (2, 0)$) (or1) {};
-\node[nand gate US, draw, anchor=input 1] at ($(xor1.output) + (1.5, -0.5)$) (nand1) {};
-\node[and gate US, draw, anchor=input 1] at ($(B) + (8, 0)$) (and2) {};
-
-\draw (A) -- (xor1.input 1);
-\draw (B) -- ($(B) + (1, 0)$) node[branch] {} -- ($(not1) + (-1, 0)$) -- (not1);
-\draw (B) -- (and1.input 1);
-\draw (C) -- (not2);
-\draw (C) -- ($(C) + (0.5, 0)$) node[branch] {} -- ($(not2) + (-0.5, -0.5)$) -- ($(not2) + (2.9, -0.5)$) |- (or1.input 2);
-\draw ($(and1.output) + (1, 0)$) node[branch] {} |- ($(nand1.input 2) + (-2.5, 0)$) -- (nand1.input 2);
-
-\node (D) at ($(and2.output) + (0.7, 0)$) {\small{?}};   
-
-\draw (not1.output) |- ([xshift=1.2cm]not1.output) |- (xor1.input 2);
-\draw (not2.output) -- ($(not2.output) + (0.3, 0)$) |- (and1.input 2);
-\draw (and1.output) -- ([xshift=0.5cm]and1.output) |- (or1.input 1);
-\draw (or1.output) -- ([xshift=0.5cm]or1.output) |- (and2.input 2);
-\draw (xor1.output) -- ([xshift=0.4cm]xor1.output) |- (nand1.input 1);
-\draw (nand1.output) -- ([xshift=0.3cm]nand1.output) |- (and2.input 1);
-\draw (and2.output) -- ([xshift=0.5cm]and2.output) |- (D);
-
-\node [draw=blue, thick, shape=rectangle, minimum width=0.45cm, minimum height=0.45cm, anchor=center, fill=white] at ($(xor1.output) + (0.2, 0)$) {};
-\node [draw=blue, thick, shape=rectangle, minimum width=0.45cm, minimum height=0.45cm, anchor=center, fill=white] at ($(or1.output) + (0.2, 0)$) {};
-\node [draw=blue, thick, shape=rectangle, minimum width=0.45cm, minimum height=0.45cm, anchor=center, fill=white] at ($(not2.output) + (0.3, 0.45)$) {};
-\node [draw=blue, thick, shape=rectangle, minimum width=0.45cm, minimum height=0.45cm, anchor=center, fill=white] at (D) {};
-\node [draw=black, thick, shape=rectangle, minimum width=0.45cm, minimum height=0.45cm, anchor=center, fill=white] at (A) {};
-\node [draw=black, thick, shape=rectangle, minimum width=0.45cm, minimum height=0.45cm, anchor=center, fill=white] at (B) {};
-\node [draw=black, thick, shape=rectangle, minimum width=0.45cm, minimum height=0.45cm, anchor=center, fill=white] at (C) {};
-
-\node [draw=black, thick, shape=rectangle, minimum width=0.5cm, minimum height=0.1cm, anchor=center, fill=white] at ($(xor1) + (0, 0.4)$) {\footnotesize{XOR}};
-\node [draw=black, thick, shape=rectangle, minimum width=0.5cm, minimum height=0.1cm, anchor=center, fill=white] at ($(not1) + (0.65, 0.25)$) {\footnotesize{NOT}};
-\node [draw=black, thick, shape=rectangle, minimum width=0.5cm, minimum height=0.1cm, anchor=center, fill=white] at ($(and1) + (0, -0.4)$) {\footnotesize{AND}};
-
-\node (D) at ($(and2.output) + (0.7, 0)$) {\small{1}};
-\node (?1) at ($(xor1.output) + (0.2, 0)$) {\small{0}};
-\node (?2) at ($(or1.output) + (0.2, 0)$) {\small{1}};
-\node (?3) at ($(not2.output) + (0.3, 0.45)$) {\small{0}};
-\node (A) at (0, 0) {\small{1}};
-\node (B) at (0, -1) {\small{0}};
-\node (C) at (0, -2) {\small{1}};  
-
-\node [draw=black, thick, shape=rectangle, minimum width=0.45cm, minimum height=0.45cm, anchor=center, fill=white] at ($(not1) + (-0.5, 0)$) {};
-\node [draw=black, thick, shape=rectangle, minimum width=0.45cm, minimum height=0.45cm, anchor=center, fill=white] at ($(not1) + (1.2, 0)$) {};
-\node [draw=black, thick, shape=rectangle, minimum width=0.45cm, minimum height=0.45cm, anchor=center, fill=white] at ($(and1) + (0.45, 0)$) {};
-\node [draw=black, thick, shape=rectangle, minimum width=0.45cm, minimum height=0.45cm, anchor=center, fill=white] at ($([xshift=0.3cm]nand1.output) + (0, -0.19)$) {};
-\node [draw=black, thick, shape=rectangle, minimum width=0.45cm, minimum height=0.45cm, anchor=center, fill=white] at ($(nand1.input 2) + (-1.3, 0)$) {};
-\node [draw=black, thick, shape=rectangle, minimum width=0.45cm, minimum height=0.45cm, anchor=center, fill=white] at ($(not2) + (2.9, 0.5)$) {};
-
-\node (x1) at ($(not1) + (-0.5, 0)$) {\small{0}};
-\node (x2) at ($(not1) + (1.2, 0)$) {\small{1}};
-\node (x3) at ($(and1) + (0.45, 0)$) {\small{0}};
-\node (x4) at ($([xshift=0.3cm]nand1.output) + (0, -0.19)$) {\small{1}};
-\node (x5) at ($(nand1.input 2) + (-1.3, 0)$) {\small{0}};
-\node (x5) at ($(not2) + (2.9, 0.5)$) {\small{1}};
-
-\end{tikzpicture}
-\end{center}
 \end{document}
