@@ -9,7 +9,19 @@
 \noindent\ExecuteMetaData[../../problems/problemT3-U2/problemT3-U2.tex]{task}
 \proborigin{Michal a Vojta}
 \klein
-
 Pojďme si postupně projít všechny možnosti a zamyslet se nad správným řešením. Jak vám už asi došlo
-tato úloha má 3 správná řešení a), b) a c). První možnost je podle klasické matematiky \uv{nejsprávnější}. S každým číslem se 
+tato úloha má 3 správná řešení a), b) a c). 
+
+První možnost je podle klasické matematiky \uv{nejkorektnější}. 
+S každým číslem se součet zvětšuje, takže intuitivně dává smysl, že součet nekonečného počtu čísel bude právě nekonečno. 
+Tato velice intuitivní myšlenka naštěsí pro tento konkrétní případ platí (složitější matematikou lze dokázat, že daná číselná řada 
+\emph{diverguje} tj. součet všech jejích členů je $\infty$). Avšak je dobré pamatovat si, že ne všchny sumace jsou takto intuitivní.
+Například sumace převrácených hodnot mocnin čísla 2 \emph{konverguje}\footnote{Pokud se chcete dozvědět více o konvergentních a 
+divergentních řadách: \newline \url!https://en.wikipedia.org/wiki/Convergent_series#Examples_of_convergent_and_divergent_series!} k výsledku 2.
+$$
+\sum_{n=0}^{\infty}\frac{1}{2^n}=\frac{1}{2^0}+\frac{1}{2^1}+\frac{1}{2^2}+\frac{1}{2^3}+\frac{1}{2^4}+\frac{1}{2^5}+\dots=
+\frac{1}{1}+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}+\dots=2
+$$
+
+Teď se podíváme na možnost c). 
 \end{document}
