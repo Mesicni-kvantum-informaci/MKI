@@ -22,6 +22,7 @@
 \RequirePackage{enumerate}
 \RequirePackage{pgfplots}
 \RequirePackage{catchfilebetweentags}
+\RequirePackage{url}
 \usetikzlibrary{arrows,shapes.gates.logic.US,shapes.gates.logic.IEC,calc,babel}
 \sisetup{output-decimal-marker = {,}}
 \pgfplotsset{compat=1.18, width=10cm}
