@@ -23,9 +23,14 @@
 \RequirePackage{pgfplots}
 \RequirePackage{catchfilebetweentags}
 \RequirePackage{url}
+\RequirePackage{physics}
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb}
 \usetikzlibrary{arrows,shapes.gates.logic.US,shapes.gates.logic.IEC,calc,babel}
 \sisetup{output-decimal-marker = {,}}
 \pgfplotsset{compat=1.18, width=10cm}
+\AtBeginDocument{\RenewCommandCopy\qty\SI}
 
 %options
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
