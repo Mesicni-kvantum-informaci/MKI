@@ -6,159 +6,32 @@
 
 \usepackage{xparse}
 \usepackage{xstring}
-\usepackage{expl3}
 
 %! Custom commands definition
 
 % Defines points sum command
-\newcommand{\psum}[6]{
-\IfInteger{#1}
-{\IfInteger{#2}
-    {\IfInteger{#3}
-        {\IfInteger{#4}
-            {\IfInteger{#5}
-                {\IfInteger{#6}
-                    {\the\numexpr #1 + #2 + #3 + #4 + #5 + #6 \relax}
-                    {\the\numexpr #1 + #2 + #3 + #4 + #5 \relax}}
-                {\IfInteger{#6}
-                    {\the\numexpr #1 + #2 + #3 + #4 + #6 \relax}
-                    {\the\numexpr #1 + #2 + #3 + #4 \relax}}}
-            {\IfInteger{#5}
-                {\IfInteger{#6}
-                    {\the\numexpr #1 + #2 + #3 + #5 + #6 \relax}
-                    {\the\numexpr #1 + #2 + #3 + #5 \relax}}
-                {\IfInteger{#6}
-                    {\the\numexpr #1 + #2 + #3 + #6 \relax}
-                    {\the\numexpr #1 + #2 + #3 \relax}}}}
-        {\IfInteger{#4}
-            {\IfInteger{#5}
-                {\IfInteger{#6}
-                    {\the\numexpr #1 + #2 + #4 + #5 + #6 \relax}
-                    {\the\numexpr #1 + #2 + #4 + #5 \relax}}
-                {\IfInteger{#6}
-                    {\the\numexpr #1 + #2 + #4 + #6 \relax}
-                    {\the\numexpr #1 + #2 + #4 \relax}}}
-            {\IfInteger{#5}
-                {\IfInteger{#6}
-                    {\the\numexpr #1 + #2 + #5 + #6 \relax}
-                    {\the\numexpr #1 + #2 + #5 \relax}}
-                {\IfInteger{#6}
-                    {\the\numexpr #1 + #2 + #6 \relax}
-                    {\the\numexpr #1 + #2 \relax}}}}}
-    {\IfInteger{#3}
-        {\IfInteger{#4}
-            {\IfInteger{#5}
-                {\IfInteger{#6}
-                    {\the\numexpr #1 + #3 + #4 + #5 + #6 \relax}
-                    {\the\numexpr #1 + #3 + #4 + #5 \relax}}
-                {\IfInteger{#6}
-                    {\the\numexpr #1 + #3 + #4 + #6 \relax}
-                    {\the\numexpr #1 + #3 + #4 \relax}}}
-            {\IfInteger{#5}
-                {\IfInteger{#6}
-                    {\the\numexpr #1 + #3 + #5 + #6 \relax}
-                    {\the\numexpr #1 + #3 + #5 \relax}}
-                {\IfInteger{#6}
-                    {\the\numexpr #1 + #3 + #6 \relax}
-                    {\the\numexpr #1 + #3 \relax}}}}
-        {\IfInteger{#4}
-            {\IfInteger{#5}
-                {\IfInteger{#6}
-                    {\the\numexpr #1 + #4 + #5 + #6 \relax}
-                    {\the\numexpr #1 + #4 + #5 \relax}}
-                {\IfInteger{#6}
-                    {\the\numexpr #1 + #4 + #6 \relax}
-                    {\the\numexpr #1 + #4 \relax}}}
-            {\IfInteger{#5}
-                {\IfInteger{#6}
-                    {\the\numexpr #1 + #5 + #6 \relax}
-                    {\the\numexpr #1 + #5 \relax}}
-                {\IfInteger{#6}
-                    {\the\numexpr #1 + #6 \relax}
-                    {\the\numexpr #1 \relax}}}}}
+\makeatletter
+\newcommand*\psum[1]{\the\numexpr0\psum@i{}#1,\hbox\relax}
+\def\psum@i#1#2{%
+    \ifcase
+    \ifx\hbox#2\z@\else\ifx,#2\@ne\else\ifnum9<1\string#2 \tw@\else\thr@@\fi\fi\fi
+    % hit end, nothing to do, \relax terminates \the\numexpr
+      \expandafter\@gobbletwo
+    \or % hit a comma after having seen only digits in this round
+      #1+0\expandafter\@firstoftwo
+    \or % a digit, accumulate it
+      \expandafter\@secondoftwo
+    \or % a non-digit gob to comma
+      \expandafter\psum@continue
+    \fi
+    {\psum@i{}}{\psum@i{#1#2}}%
 }
-{\IfInteger{#2}
-    {\IfInteger{#3}
-        {\IfInteger{#4}
-            {\IfInteger{#5}
-                {\IfInteger{#6}
-                    {\the\numexpr #2 + #3 + #4 + #5 + #6 \relax}
-                    {\the\numexpr #2 + #3 + #4 + #5 \relax}}
-                {\IfInteger{#6}
-                    {\the\numexpr #2 + #3 + #4 + #6 \relax}
-                    {\the\numexpr #2 + #3 + #4 \relax}}}
-            {\IfInteger{#5}
-                {\IfInteger{#6}
-                    {\the\numexpr #2 + #3 + #5 + #6 \relax}
-                    {\the\numexpr #2 + #3 + #5 \relax}}
-                {\IfInteger{#6}
-                    {\the\numexpr #2 + #3 + #6 \relax}
-                    {\the\numexpr #2 + #3 \relax}}}}
-        {\IfInteger{#4}
-            {\IfInteger{#5}
-                {\IfInteger{#6}
-                    {\the\numexpr #2 + #4 + #5 + #6 \relax}
-                    {\the\numexpr #2 + #4 + #5 \relax}}
-                {\IfInteger{#6}
-                    {\the\numexpr #2 + #4 + #6 \relax}
-                    {\the\numexpr #2 + #4 \relax}}}
-            {\IfInteger{#5}
-                {\IfInteger{#6}
-                    {\the\numexpr #2 + #5 + #6 \relax}
-                    {\the\numexpr #2 + #5 \relax}}
-                {\IfInteger{#6}
-                    {\the\numexpr #2 + #6 \relax}
-                    {\the\numexpr #2 \relax}}}}}
-    {\IfInteger{#3}
-        {\IfInteger{#4}
-            {\IfInteger{#5}
-                {\IfInteger{#6}
-                    {\the\numexpr #3 + #4 + #5 + #6 \relax}
-                    {\the\numexpr #3 + #4 + #5 \relax}}
-                {\IfInteger{#6}
-                    {\the\numexpr #3 + #4 + #6 \relax}
-                    {\the\numexpr #3 + #4 \relax}}}
-            {\IfInteger{#5}
-                {\IfInteger{#6}
-                    {\the\numexpr #3 + #5 + #6 \relax}
-                    {\the\numexpr #3 + #5 \relax}}
-                {\IfInteger{#6}
-                    {\the\numexpr #3 + #6 \relax}
-                    {\the\numexpr #3 \relax}}}}
-        {\IfInteger{#4}
-            {\IfInteger{#5}
-                {\IfInteger{#6}
-                    {\the\numexpr #4 + #5 + #6 \relax}
-                    {\the\numexpr #4 + #5 \relax}}
-                {\IfInteger{#6}
-                    {\the\numexpr #4 + #6 \relax}
-                    {\the\numexpr #4 \relax}}}
-            {\IfInteger{#5}
-                {\IfInteger{#6}
-                    {\the\numexpr #5 + #6 \relax}
-                    {\the\numexpr #5 \relax}}
-                {\IfInteger{#6}
-                    {\the\numexpr #6 \relax}
-                    {-}}}}}
-}
-}
-
-\ExplSyntaxOn 
-\cs_set_eq:NN \fpeval \fp_eval:n 
-\ExplSyntaxOff
+\def\psum@continue#1,{\psum@i{}}
+% I do not recall if \thr@@ exists since a long time in LaTeX
+\ifdefined\thr@@\else\chardef\thr@@=3 \fi
 
 % Defines division command
-\newcommand{\pdiv} [2] {
-\def\x{#1}    
-\def\y{#1}
-\fpeval{\x/\y}
-    %\the\numexpr #1 / #2 \relax
-%\IfInteger{#1}
-%    {\IfInteger{#2}
-%        {\the\numexpr #1/#2 \relax}
-%        {-}}
-%    {-}
-}
+\newcommand{\pdiv} [2] {\the\numexpr #1/#2 \relax}
 
 % Defines multiplication command
 \newcommand{\pmult} [2] {\the\numexpr #1*#2 \relax}
@@ -169,6 +42,9 @@
 }
 
 % Defines \% command
+\newcommand{\percent}{
+    \pdiv{\pmult{100}{\entrysum}}{}%součet bodů všech úloh které řešili%}
+}
 
 
 % Defines \correntry for later use (calculating percentages), takes 1 arg of form {U1, U2, U3, A, K, B}
@@ -181,7 +57,7 @@
     \global\def\corrA{#4}
     \global\def\corrK{#5}
     \global\def\corrB{#6}
-    \global\def\corrsum{\psum{#1}{#2}{#3}{#4}{#5}{#6}}
+    \global\def\corrsum{\psum{#1, #2, #3, #4, #5, #6}}
     %
 \noindent\textbf{Student Pilný} & \textbf{?} & \textbf{#1} & \textbf{#2} & \textbf{#3} & \textbf{#4} & \textbf{#5} & \textbf{#6} & 100 & 100 & \corrsum
 }
@@ -190,9 +66,9 @@
 \NewDocumentCommand{\entry}{ >{\SplitArgument{7}{,}} m}{\rowgen#1}
 
 \NewDocumentCommand{\rowgen}{mmmmmmmm}{%
-    \global\def\entrysum{\psum{#3}{#4}{#5}{#6}{#7}{#8}}
+    \global\def\entrysum{\psum{#3, #4, #5, #6, #7, #8}}
 %
-#1 & #2 & #3 & #4 & #5 & #6 & #7 & #8 & \entrysum & \hashtag & \entrysum
+#1 & #2 & #3 & #4 & #5 & #6 & #7 & #8 & \percent & \hashtag & \entrysum
 }
 
 \begin{document}
