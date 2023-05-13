@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm, compat=1.9}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+    enlargelimits=false,
+]
+\addplot[
+    only marks,
+    scatter,
+    mark size=0.1pt]
+table[meta=ma]
+{lol.txt};
+\end{axis}
+\end{tikzpicture}
+\end{document}
