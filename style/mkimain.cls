@@ -4,6 +4,7 @@
 
 %used packages
 \RequirePackage[czech]{babel}
+\RequirePackage{siunitx}
 \RequirePackage{standalone}
 \RequirePackage{import}
 \RequirePackage{fancyhdr}
@@ -12,7 +13,6 @@
 \RequirePackage{blindtext}
 \RequirePackage{mdframed}
 \RequirePackage{float}
-\RequirePackage{siunitx}
 \RequirePackage{xcolor}
 \RequirePackage{float}
 \RequirePackage{lastpage}
@@ -29,7 +29,10 @@
 \RequirePackage{amssymb}
 \usetikzlibrary{arrows,shapes.gates.logic.US,shapes.gates.logic.IEC,calc,babel}
 \sisetup{output-decimal-marker = {,}}
-\pgfplotsset{compat=1.18, width=10cm}
+\pgfplotsset{width=10cm, compat=1.9}
+\DeclareSIUnit \parsec {pc}
+\DeclareSIUnit \l {l}
+
 \AtBeginDocument{\RenewCommandCopy\qty\SI}
 
 %options
