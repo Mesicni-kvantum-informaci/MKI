@@ -29,7 +29,7 @@
 \RequirePackage{amssymb}
 \usetikzlibrary{arrows,shapes.gates.logic.US,shapes.gates.logic.IEC,calc,babel}
 \sisetup{output-decimal-marker = {,}}
-\pgfplotsset{compat=1.18, width=10cm}
+\pgfplotsset{width=10cm, compat=1.9}
 \DeclareSIUnit \parsec {pc}
 \DeclareSIUnit \l {l}
 
