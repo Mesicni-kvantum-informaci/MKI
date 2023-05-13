@@ -9,7 +9,148 @@
 \noindent\ExecuteMetaData[../../problems/problemT3-U2/problemT3-U2.tex]{task}
 \proborigin{Michal a Vojta}
 \klein
-
 Pojďme si postupně projít všechny možnosti a zamyslet se nad správným řešením. Jak vám už asi došlo
-tato úloha má 3 správná řešení a), b) a c). První možnost je podle klasické matematiky \uv{nejsprávnější}. S každým číslem se 
+tato úloha má 3 správná řešení a), b) a c). 
+
+První možnost je podle klasické matematiky \uv{nejkorektnější}. 
+S každým číslem se součet zvětšuje, takže intuitivně dává smysl, že součet nekonečného počtu čísel bude právě nekonečno. 
+Tato velice intuitivní myšlenka naštěsí pro tento konkrétní případ platí (složitější matematikou lze dokázat, že daná číselná řada 
+\emph{diverguje} tj. součet všech jejích členů je $\infty$). Avšak je dobré pamatovat si, že ne všchny sumace jsou takto intuitivní.
+Například sumace převrácených hodnot mocnin čísla 2 \emph{konverguje}\footnote{Pokud se chcete dozvědět více o konvergentních a 
+divergentních řadách: \newline \url!https://en.wikipedia.org/wiki/Convergent_series#Examples_of_convergent_and_divergent_series!} k výsledku 2.
+$$
+\sum_{n=0}^{\infty}\frac{1}{2^n}=\frac{1}{2^0}+\frac{1}{2^1}+\frac{1}{2^2}+\frac{1}{2^3}+\frac{1}{2^4}+\frac{1}{2^5}+\dots=
+\frac{1}{1}+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}+\dots=2
+$$
+
+\noindent Zdůvodnění správnosti druhé možnosti je celkem jasné. 42. Odpověď na všechno.
+
+Někteří z vás se určitě nedočkavě ptají jak je to s možností c). I přes veškerou intuici je 
+i tato možnost správná. Existuje několik způsobů jak sumaci (součtu) všech přirozených čísel 
+přiřadit\footnote{Záměrně jsme použili slovo přiřadit, protože následující hodnota není výsledkem sumace ve klasickém smyslu} 
+hodnotu $-\dfrac{1}{12}$, nejznámějšími jsou tzv. \emph{regularizace zeta funkce} a \emph{Ramanujanova sumace}. 
+\\
+\\
+\noindent \emph{Upozornění pro nematematiky: Obě metody vyžadují využití složité matematiky (calculus, komplexní čísla). Níže se vám pokusíme metody vysvětlit ve zjednodušené formě.}
+
+\subsection*{Regularizace zeta funkce}
+Náš příběh začíná u slavného matematika \emph{Leonharda Eulera} a jiné nekonečné řady, a to u sumace všech mocnin daného čísla $x$.
+$$
+\sum_{n=0}^{\infty}x^n=1+x+x^2+x^3+x^4+x^5+\dots=\frac{1}{1-x}
+$$
+Nyní si stějně jako Euler dokážeme výše uvedenou hodnotu, ke které daná řada konverguje. Označme tuto řadu $S$.
+$$
+S=1+x+x^2+x^3+x^4+x^5+\dots
+$$
+Po vynásobení obou stran rovnice $x$ dostáváme 
+$$
+xS=x+x^2+x^3+x^4+x^5+x^6+\dots\text{.}
+$$
+Když od sebe tyto dvě řady odečteme všechny jejich členy se až na 1 z první řady vykrátí.
+$$
+S-xS=1
+$$
+Několika jednoduchými úpravami z této rovnice vyjádříme $S$.
+$$
+S(1-x)=1
+$$
+$$
+S=\frac{1}{1-x}
+$$
+Nyní, když už známe hodnotu této sumace, se pojdmě vrátit zpět k úpravám. 
+K dalšímu postupu budeme řadu potřebovat \emph{zderivovat}. K derivování 
+této řady naštěstí potřebujeme znát jen jedno jednoduché pravidlo, a tím je pravidlo pro derivaci mocniny.
+$$
+\dv{x}x^n=nx^{n-1}
+$$
+Teď zderivujeme obě strany rovnice. Derivace 1 je 0. Pravou stranu rovnice můžeme zapsat 
+jako $\left(1-x\right)^{-1}$ a uplatnit pravidlo zmíněné výše.
+$$
+\dv{x}\left(1+x+x^2+x^3+x^4+x^5+x^6+\dots\right)=\dv{x}\left(\frac{1}{1-x}\right)
+$$
+$$
+0+1+2x+3x^2+4x^3+5x^4+6x^5+\dots=\frac{1}{\left(1-x\right)^2}
+$$
+V dalším kroku Euler položil $x=-1$. Po dosazení této hodnoty dostaneme následující rovnici.
+$$
+1-2+3-4+5-6+\dots=\frac{1}{4}
+$$
+Teď už přichází do hry funkce zmíněná v názvu této metody, \emph{Riemannova zeta funkce}
+\footnote{Můžete se setkat i s označením \emph{Eulerova-Riemannova zeta funkce}, Euler jí formuloval a Riemann jí rozšířil pro obor komplexních čísel.}.
+Značí se $\zeta(s)$, kde $s=\sigma+ti \in \mathbb{C}$ je její argument náležící \emph{komplexním číslům} s \emph{reálnou} částí $\operatorname{Re}(s)=\sigma$ 
+a \emph{imaginární} částí $\operatorname{Im}(s)=t$, a je definování následovně:
+$$
+\zeta(s)=\sum_{n=1}^{\infty}\frac{1}{n^s}=\frac{1}{1^s}+\frac{1}{2^s}+\frac{1}{3^s}+\frac{1}{4^s}+\frac{1}{5^s}+\dots=1^{-s}+2^{-s}+3^{-s}+4^{-s}+5^{-s}+\dots
+$$
+Když $\zeta(s)$ vynásobíme $2^{-s}$ dostaneme
+$$
+2^{-s}\zeta(s)=2^{-s}+4^{-s}+6^{-s}+8^{-s}+10^{-s}+\dots
+$$
+Teď dvojnásobek tohoto výsledku odečteme od zeta funkce $\zeta(s)$.
+$$
+\zeta(s)-2\cdot2^{-s}\zeta(s)=(1-2\cdot2^{-s})\zeta(s)=1-2^{-s}+3^{-s}-4^{-s}+5^{-s}-6^{-s}+\dots
+$$
+Dále Euler položil $s=-1$, takže naštěstí nebudeme muset počítat s komplexními čísly. Po dosazení do obou stran rovnice dostaneme:
+$$
+(1-2\cdot2^1)\zeta(-1)1-2^{1}+3^{1}-4^{1}+5^{1}-6^{1}+\dots
+$$
+Po dosazení $-1$ do argumentu $\zeta(s)$ se nám celá funkce redukuje na součet všech přirozených čísel. To zní povědomě, ne?
+$$
+-3(1+2+3+4+5+\dots)=1-2+3-4+5-6+\dots
+$$
+Už dříve jsme dokázali, že pravá strana rovnice je rovna $\dfrac{1}{4}$, takže už nás čeká jen pár úprav.
+$$
+-3(1+2+3+4+5+\dots)=\frac{1}{4}
+$$
+$$
+1+2+3+4+5+\dots=-\frac{1}{12}
+$$
+A máme výsledek!
+\subsection*{Ramanujanova sumace}
+Tato metoda je o něco kratší než předchozí, ale neméně zajímavá. V hodně zkrácené a zjednoduššené verzi zní takto:
+Ozančme si sumaci všech přirozených čísel $c$.
+$$
+c=1+2+3+4+5+6+\dots
+$$
+Teď zapišme čtřnásobek této řady $4c$.
+$$
+4c=4+8+12+16+20+24+\dots
+$$
+Když teď od sebe tyto dvě řady odečteme dostaneme posloupnost přirozených čísel s \uv{prohozeným} každým druhým znaménkem.
+$$
+-3c=1-2+3-4+5-6+\dots
+$$
+\emph{Srinivasa Ramanujan} dále ve svém postupu dokázal stejně jako my při řešení přes zeta funkci, že tato posloupnost je rovna $\dfrac{1}{4}$. 
+$$
+-3c=\frac{1}{4} \ \rightarrow \ c=-\frac{1}{12}
+$$
+$$
+1+2+3+4+5+\dots=-\frac{1}{12}
+$$
+Sice jsme se podobným (a jednodušším!) způsobeb dostali ke stejnému výsledku jako 
+Euler při odvození přes zeta funkci, ale tento postup není úplně matematicky korektní.
+Určitě jste si všimli, že když jsme od původní řady odečítali její čtyřnásobek, aby se 
+nám \uv{otočilo} znaménko každého druhého členu. To s sebou ale nese menší problém. 
+
+A to sice že trochu zapomínáme, že manipulujeme s nekonečnými řadami, a že s nimi nemůžeme 
+zacházet stejně jako s konečnými. Ve skutečnosti jsme totiž odčítali řadu
+$$
+0+4+0+8+0+12+0+\dots\text{,}
+$$
+což by se na první pohled mohlo zdát jen jako nevinná úprava pro přehlednost, ale při práci 
+s nekonečmi řadami si musíme dávat pozor i na takové věci. Přidáním jedné nuly např. na začátek bychom mohli změnit 
+celý výsledek. A nejen to! Řada by pak dokonce ani nemusela konvergovat! 
+
+%Druhým problémem je velikost řad. Možná si říkáte, že obě řady jsou přeci nekonečné, tak v čem je problém?
+%Háček spočívá v tom, že ne všechna nekonečna jsou stejně velká. Podívejme se například na přirozená a reálná čísla. 
+%Představte si vypíšete pod sebe všechna reálná čísla a ke každému přiřadíte jedno přirozené číslo. Teď máte na \uv{papíře} 
+%stejný počet čísel z obou množin a mohlo by se zdát, že obě množiny mají stejný počet čísel. Opak je ale pravdou. Pokaždé, 
+%když si myslíte, že jste vypsali všechna reálná čísla, tak lze najít jedno, které jste ještě nevypsali.
+%Jednosuše vezmete první číslici prvního čísla a změníte jí, pak druhou číslici druhého čísla atd. Takto dostanete nové číslo, 
+%které se od každého čísla v seznamu liší minimálně jednou číslicí. Co s tím? Protože jsme všechna přirozená čísla už vyčerapali na předchozí reálná čísla musí reálných čísel být více než přirozených. 
+%Pojdmě se vrátit zpět k řadám, které jsme odčítali. Abychom získali výslednou řadu tak jsme vždy odečetli jeden člen z řady $4c$ od každého druhého členu řady $c$. 
+%Není to trochu problém? Odčítáme \uv{méně} čísel 
+
+% jsem taky debil
+
 \end{document}
