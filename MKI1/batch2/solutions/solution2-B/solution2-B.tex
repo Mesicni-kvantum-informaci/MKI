@@ -7,12 +7,48 @@
 \begin{document}
 \ExecuteMetaData[../../problems/problem2-B/problem2-B.tex]{header}
 \noindent\ExecuteMetaData[../../problems/problem2-B/problem2-B.tex]{task}
-\proborigin{Jindra přemýšlel nad slavným citátem \uv{Two B or not two B?}}.
+\proborigin{SRACKA --- Jindra přemýšlel nad slavným citátem \uv{Two B or not two B?}}.
 \klein
-Od semaforu se šíří světlo směrem k autu. Jelikož se auto pohybuje, a vlnová délka světla se důsledkem \emph{Dopplerova jevu} zmenšuje.
+Od semaforu se šíří světlo směrem k autu. Jelikož se auto pohybuje, vlnová délka světla se důsledkem \emph{Dopplerova jevu} zmenšuje.
 Pro frekvenci $f_e$ emitovaného světla a frekvenci $f_p$ přijatého světla platí rovnice
 $$f_e=f_s\left(1+\frac{v_p}{v}\right),$$
 kde $v_p$ je rychlost přijímače, tedy auta, a $v$ je rychlost vlnění, v našem případě světla.
+Proto za $v$ dosadíme rychlost světla $c$.
+
+Chceme vypočítat, jakou rychlostí by se řidič musel pohybovat, tedy chceme zjistit $v_p$.
+Roznásobením závorky a úpravou se dostaneme k vztahu:
+$$\frac{f_e-f_s}{f_s}=\frac{v_p}{c}.$$
+frekvence můžeme obměnit za vlnové délky. 
+$$\frac{\lambda_e-\lambda_s}{\lambda_s}=\frac{v_p}{c}$$
+Malá odbočka: dostali jsme se k vztahu, který se používá (zjednodušeně) v astrofyzice. Levá strana rovnice se nazývá rudý/červený posuv. 
+
+Zpět však k naší úloze.
+Za vlnovou délku $\lambda_e$ emitovaného světla dosadíme vlnovou délku $\lambda_R$ červené barvy, a za vlnovou délku $\lambda_s$ přijatého světla vlnovou délku $\lambda_G$ zeléné barvy. 
+Rovnici už jen upravíme tak, abychom vyjádřili rychlost $v_p$ auta.
+$${v_p}=c\frac{\lambda_R-\lambda_G}{\lambda_G}$$
+Číselně výsledek vychází
+$$v_p\approx8,2\cdot10^7\;\mathrm{m\cdot s^{-1}}$$
+Výsledek vám možná nebude vycházet na číslo stejně\dots to ale vůbec nevadí. Při takhle velkém čísle nás výsledek zajímá pouze řádově.  
+
+Klasický Dopplerův jev platí pro vlnění, které se šíří jen v určitém prostředí (třeba vzduch nebo voda\dots).
+Avšak víme, že elektromagnetické vlny, a tedy i světlo, pro šíření žádné prostředí nepotřebují (mohou se šířit ve vakuu).
+Proto bychom správně měli používat \textit{relativistický Dopplerův jev}.
+U elektromagentických vln tento jev závisí pouze na relativním pohybu mezi přijímačem a vysílačem.
+\newpage
+\noindent
+Platí pro něj vztah:
+$$f_p=f_e\sqrt{\frac{c+v}{c-v}},$$
+kde $f_p$ je přijímaná frekvence, $f_e$ frekvence emitovaná a $v$ relativní rychlost.
+Frekvence opět obdobně nahradím za vlnové délky a rovnici postupně upravím.
+$$\left(\frac{\lambda_p}{\lambda_e}\right)^2=\frac{c+v}{c-v}$$
+$$\left(\frac{\lambda_p}{\lambda_e}\right)^2{c-v}={c+v}$$
+$$\left(\frac{\lambda_p}{\lambda_e}\right)^2c-c=2v$$
+%$$v=\frac{c}{2}\left(\left(\frac{\lambda_p}{\lambda_e}\right)^2-1\right)$$
+$$v=\frac{c}{2}\left(\frac{\lambda_p^2}{\lambda_e^2}-1\right)$$
+Číselně je rychlost $v$
+$$v\approx9,3\cdot10^7\;\mathrm{m\cdot s^{-1}}.$$
+Vidíme, že oba výsledky jsou pro tak velká čísla řádově stejná, proto v tomto případě je akceptovatelné použít i klasický Dopplerův efekt.
+Pro menší čísla by to však mohl být problém, proto pro světlo vždy počítejte s relativistickým Dopplerovým jevem.
 \end{document}
 
 %https://www.christian-doppler.net/cs/doppleruv-jev/
