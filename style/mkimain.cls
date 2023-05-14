@@ -66,7 +66,7 @@
 \fancyhead[R]{\@month ~\@year}
 \fancyhead[C]{Měsíční kvantum informací}
 \fancyhead[L]{\@series.~série}
-  
+
 %záhlaví první strany
 \fancypagestyle{firstpage}
 {
