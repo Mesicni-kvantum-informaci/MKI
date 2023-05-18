@@ -1,16 +1,10 @@
 \documentclass{../../../../style/mkimain}
- 
+
 \series{2}
 \month{březen}
 \year{2023}
 
 \begin{document}
 \firstpageprint{../../../../propagace/logo/mkilogo.png}{../../../../propagace/qrcodes/MKI1/batch2el.png}
-\import{../../problems/problem2-U1/}{problem2-U1.tex}
-\import{../../problems/problem2-U2/}{problem2-U2.tex}
-\import{../../problems/problem2-U3/}{problem2-U3.tex}
-\import{../../problems/problem2-A/}{problem2-A.tex}
-\import{../../problems/problem2-K/}{problem2-K.tex}
-\import{../../problems/problem2-B/}{problem2-B.tex}
-\import{../../../../general/end}{end.tex}
+\ExecuteMetaData[../batch2el/batch2el.tex]{content}
 \end{document}
