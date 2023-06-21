@@ -26,6 +26,11 @@
 \RequirePackage{physics}
 \RequirePackage{amsfonts}
 \RequirePackage{amssymb}
+\usepackage[defaultlines=4,all]{nowidow}
+\makeatletter
+\patchcmd{\CatchFBT@Fin@l}{\endlinechar\m@ne}{}
+  {}{\typeout{Unsuccessful patch!}}
+
 \usetikzlibrary{arrows,shapes.gates.logic.US,shapes.gates.logic.IEC,calc,babel}
 \sisetup{output-decimal-marker = {,}}
 \pgfplotsset{compat=1.18, width=10cm}
