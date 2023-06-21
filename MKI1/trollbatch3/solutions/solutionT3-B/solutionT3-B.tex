@@ -9,4 +9,127 @@
 \noindent\ExecuteMetaData[../../problems/problemT3-B/problemT3-B.tex]{task}
 \proborigin{}
 \klein
+
+\begin{enumerate}
+    \item Pro potřeby tohoto řešení můžeme použít formu klasického bispinoru.
+    \begin{equation} \label{eq:1}
+    \psi=\begin{pmatrix}
+        \psi_L\\
+        \psi_R
+    \end{pmatrix}
+    \end{equation}
+    Kde složky vlnové funkce $\psi_L$ a $\psi_R$ nám určují chiralitu. Tato forma odpovídá popisu a interpretaci německého fyzika Hermanna Weyla, který se chiralitou částic hojně zabýval a vytvořil pro svoje teoretické úvahy vlastní reprezentaci gama matic, tzv. \emph{Weylovu chirální}. V ní matice $\gamma^1$, $\gamma^2$ a $\gamma^3$ vypadají úplně stejně jako Diracovy, pouze matice $\gamma^0$ má tvar
+     $$\gamma^0=\begin{pmatrix}
+        0 & I_2\\
+        I_2 & 0
+    \end{pmatrix} \text{.}$$
+A pro všechna $i\in\{1;2;3\}$ mají gama matice podobu
+     $$\gamma^i=\begin{pmatrix}
+        0 & \sigma^i\\
+        -\sigma^i & 0
+    \end{pmatrix} \text{.}$$
+Všimněme si, že $\gamma^0$ matice obsahuje $I_2=\sigma^0$ a že jsou tyto prvky na stejných pozicích, jako spinové matice v dalších gama maticích. Když jsme na začátku definovali Pauliho spinové matice jako čtyřvektor $\sigma^\mu$ a jeho sdruženou podobu $\bar{\sigma}^\mu$, můžeme docela chytře zapsat Weylovy gama matice rovněž v úsporném čtyrvektrovém tvaru.
+\begin{equation} \label{eq:2}
+ \gamma^\mu=\begin{pmatrix}
+        0 & \sigma^\mu\\
+        \bar{\sigma}^\mu & 0
+    \end{pmatrix}
+\end{equation}
+Přičemž $\mu\in\{1;2;3;4\}$.
+Tuto reprezentaci gama matic použijeme při odvození Weylových rovnic pro nehmotné fermiony. Obecně když jde stále o fermiony, musí vše vycházet z Diracovy rovnice, která je přeci jenom popisuje v plné kráse.
+ $$\left(i\partial\!\!\!/-m\right)\psi=0$$
+Tím, že jsou hypotetické Weylovy fermiony nehmotné ($m=0$), se Diracova rovnice redukuje na tvar
+ \begin{equation}\label{eq:3}
+ \partial\!\!\!/\psi=0\text{.}    
+ \end{equation}
+ Na základě Feynmanovy \uv{slash} notace víme, že rozepsaný tvar rovnice vypadá takto:
+$$\gamma^\mu\partial_\mu\psi=0\text{.}$$
+Následně použijeme vztahy \ref{eq:1} a \ref{eq:2} z Weylovy chirální reprezentace.
+$$ \begin{pmatrix}
+        0 & \sigma^\mu\\
+        \bar{\sigma}^\mu & 0
+    \end{pmatrix} \partial_\mu \begin{pmatrix}
+        \psi_L\\
+        \psi_R
+    \end{pmatrix}=0 $$
+A roznásobíme\dots
+$$ \begin{pmatrix}
+        0 & \sigma^\mu\\
+        \bar{\sigma}^\mu & 0
+    \end{pmatrix} \begin{pmatrix}
+        \partial_\mu\psi_L\\
+        \partial_\mu\psi_R
+    \end{pmatrix}=0 $$
+$$ \begin{pmatrix}
+        \sigma^\mu \partial_\mu\psi_R\\
+        \bar{\sigma}^\mu \partial_\mu\psi_L
+    \end{pmatrix}=0 $$
+    Což jsou už v podstatě Weylovy rovnice pro nehmotné fermiony zapsané jen pomocí vektoru.
+    $$
+    \sigma^\mu \partial_\mu \psi_R = 0
+    $$
+    $$
+    \bar{\sigma}^\mu \partial_\mu \psi_L = 0
+    $$
+    Je zajímavé ohlédnout se do historie a zajímat se o to, co se o neutrinech domnívalo dříve. Dlouhou dobu bylo lidstvo přesvědčeno, že neutrina skutečně patří do skupiny částic s nulovou klidovou hmotností, což by rovněž implikovalo fakt, že je jejich rychlost přesně světelná (jak lze dokázat z rovnice \ref{eq:3}). Tuto informaci zahrnoval standardní model částic dost dlouhou dobu. Dnes však víme, že byla chybná. Ale s podobnou jistotou prohlašuje Richard Feynman ve svých přednáškách\footnote{FEYNMAN, Richard P., LEIGHTON, Robert B., SANDS, Matthew. \textit{The Feynman Lectures on Physics 3}. California Institute of Technology, USA: Addison-Wesley Longman, 1965.}, že neutrina skutečně klidovou hmotnost nemají. V současné době ale naše experimenty spíše potvrzují, že jim určitou klidovou hmotnost připsat můžeme, sice dost malou, ale můžeme. Neutrina jsou tedy z dnešního pohledu lehounké a zároveň dost rychlé částice. Jsou dokonce tak rychlé, že v roce 2011 jim byla v CERNu naměřená rychlost vyšší než rychlost světla. Ve skutečnosti se však jednalo jen o technickou chybu, ale poukazuje to na to, jak málo toho o neutrinech víme a jak málo toho jsme schopni o těchto prazvláštních částicích zjistit.
+
+    Důkaz, že neutrina jsou opravdu hmotné částice, přineslo až pozorování jevu zvaného \emph{oscilace neutrin}. Ten připouští, že jednotlivé typy neutrin mají i nějakou malou pravděpodobnost, že ponesou hmotnost jiného typu neutrina. To jim umožňuje přeměňovat se mezi sebou, vydávat se za jiná neutrina. Ve standardním modelu částic existují tři, elektronové, mionové a tauonové. Každé z nich má řádově odlišnou hmotnost, což je předpoklad k tomu, aby oscilace probíhala. Kdyby byla neutrina nehmotná, nic takového bychom pozorovat ani nemohli. Tento jev tedy vyvrátil domněnku, že neutrina patří mezi Weylovy fermiony.
+    
+    \item
+    Už jsme si udělali jasno v tom, jakou hmotnost a rychlost neutrina mají. Prozradím vám, že toto nebyla jediná neutrinová záhada, která lidstvu vrtala hlavou. Dodnes totiž nevíme, jestli náhodou nejsou neutrina tzv. \emph{Majoranovy fermiony}. Fermiony, které jsou samy sobě antičásticí.
+    
+    Existuje matematická operace, která nám umí převést vlnovou funkci částice na vlnovou funkci její příslušné antičástice, která až na náboj má všechny stejné výchozí podmínky. Říká se jí nábojové sdružení a má tvar
+    $$\psi ^c=C\overline{\psi}^\mathsf{T}\text{.}$$
+    $C$ je matice nábojového sdružení. Ta má v Diracově reprezentaci (po zbytek úlohy budeme používat už jen jeho) tvar
+    $$C=\begin{pmatrix}
+        0 & -i\sigma_y\\
+        -i\sigma_y & 0
+    \end{pmatrix} \text{.}$$
+    Řekněme tedy, že máme volnou (interakce s vnějšími poli a ostatními částicemi nás zatím nezajímá) částici s vlnovou funkcí $\psi$. Sama se bude řídit Diracovou rovnicí. 
+ $$\left(i\partial\!\!\!/-m\right)\psi=0$$
+Nyní vytvořme k dané částici její antičástici, stále ve stejných podmínkách. Její vlnová funkce bude $\psi^c$. Jelikož antičástice fermionů jsou opět fermiony, musí i naše antičástice splňovat Diracovu rovnici.
+$$\left(i\partial\!\!\!/-m\right)\psi^c=0$$
+Nyní si s rovnicemi můžeme libovolně hrát. Zkusme je například sečíst.
+$$\left(i\partial\!\!\!/-m\right)\psi+\left(i\partial\!\!\!/-m\right)\psi^c=0$$
+$$i\partial\!\!\!/\psi-m\psi+i\partial\!\!\!/\psi^c-m\psi^c=0$$
+$$\left(i\partial\!\!\!/\psi^c-m\psi\right)+\left(i\partial\!\!\!/\psi-m\psi^c\right)=0$$
+Pokud má ze zadání platit, že
+    $$i\partial\!\!\!/\psi^c-m\psi=0\text{,}$$
+musí i druhý výraz být roven nule.
+$$i\partial\!\!\!/\psi-m\psi^c=0$$
+Poměrně prostá matematika, že? Je to docela hezký argument, ale na začátku jsme vyslovili předpoklad, že i antičástice splňuje Diracovu rovnici. Co kdybychom se obešli bez toho a dopracovali se k výsledku čistou matematikou?
+Začněme s rovnicí
+     \begin{equation}\label{eq:4}
+    i\partial\!\!\!/\psi^c-m\psi=0\text{.}
+    \end{equation}
+    Rozepišme nábojové sdružení.
+$$\psi^c=C\overline{\psi}^\mathsf{T}=C\left(\psi^\dagger\gamma^0\right)^\mathsf{T}=C\left(\gamma^0\right)^\mathsf{T}\left(\psi^\dagger\right)^\mathsf{T}=C\gamma^0\psi^*=-\gamma^0C\psi^*$$    
+To, že matice nábojového sdružení antikomutuje s gama nula maticí, se může dokázat prostým násobením těchto matic v jednom pořadí a pak v druhém. Náš získaný tvar nábojového sdružení dosadíme do rovnice \ref{eq:4} a přenásobíme $-1$.
+$$i\partial\!\!\!/\left(\gamma^0C\psi^*\right)+m\psi=0$$
+Vynásobíme rovnici zleva $\gamma^0$. A rozepíšeme $\partial\!\!\!/$ na $\gamma ^\mu \partial_\mu$.
+
+$$i\gamma^0\gamma^\mu\gamma^0C\partial_\mu \psi^*+m\gamma^0\psi=0$$
+Opět pracným násobením matic si můžete dokázat identitu
+$$\gamma^0\gamma^\mu\gamma^0=\left(\gamma^\mu\right)^\dagger \text{,}$$
+kterou využijeme na zkrácení zápisu.
+$$i\left(\gamma^\mu\right)^\dagger C\partial_\mu \psi^*+m\gamma^0\psi=0$$
+Dále rovnici komplexně sdružíme.
+$$-i\left(\gamma^\mu\right)^\mathsf{T} C\partial_\mu \psi+m\gamma^0\psi^*=0$$
+Pokud si vzpomínáte, tak $\gamma^0\psi^*=\overline{\psi}^\mathsf{T}$. Vynásobme rovnici zleva $C$.
+$$-iC\left(\gamma^\mu\right)^\mathsf{T} C \partial_\mu \psi+mC\overline{\psi}^\mathsf{T}=0$$
+Další vztah, který si lze dokázat pronásobováním matic, je
+$$C\left(\gamma^\mu\right)^\mathsf{T} C=\gamma^\mu\text{.}$$
+A pokud užijeme definici nábojového sdružení, zjistíme, že se rovnice ještě více zredukuje.
+$$-i\gamma^\mu\partial_\mu \psi+m\psi^c=0$$
+Přenásobením $-1$ a užitím Feynmanovy \uv{slash} notace se dostaneme finálně k Majoranově rovnici.
+$$i\partial\!\!\!/\psi-m\psi^c=0$$
+Zda neutrina tuto rovnici splňují, dnes stále nikdo neví. Velký problém totiž tkví v experimentálním důkazu. Zatím nevíme, jaký experiment provést, abychom mohli Majoranovu hypotézu v případě neutrin potvrdit nebo vyvrátit. Jeden z nejdiskutovanějších, teoreticky možných experimentů je pozorování \emph{dvojitého beta rozpadu bez neutrin}.
+Vezměme si kupříkladu beta mínus rozpad.
+   $$\ce{n -> p + e- + \overline{\nu}_e}$$
+Neutron se rozpadá na proton, elektron a antineutrino. Co když proběhnou dva tyto rozpady téměř ve stejnou chvíli?$$\ce{2n -> 2p + 2e- + 2\overline{\nu}_e -> 2p + 2e-}$$
+Zkrátka nám vzniknou dvě antineutrina. Pokud jsou neutrina opravdu Majoranovy fermiony, jsou totožné s antineutriny a anihilují navzájem, ačkoliv se jedná o částice stejného druhu.
+Při dvojitém beta rozpadu je možné, aby dvě neutrina (antineutrina), která vznikají jako produkt, navzájem anihilovala už v jakémsi vnitřním mechanismu celého rozpadu. Jako výsledek bychom pozorovali pouze dva protony a dva elektrony.
+
+Problém s tímto experimentálním provedením je, že neutrina jsou částice, které prochází téměř vším a je velmi nepravděpodobné jejich zachycení a detekce. Pokud tedy při experimentu s dvojitým beta rozpadem žádná neutrina nezpozorujete, bude to pravděpodobně tím, že vám proklouzla mezi prsty a ne tím, že anihilovala. Jako řešení tohoto problému se jeví detekovat produkty z jejich samotné anihilace, ale i to je poněkud komplikované a ne tolik vypovídající. Neutrina tak zůstávají pro lidstvo stále ještě obrovskou záhadou\dots
+\end{enumerate}
 \end{document}
