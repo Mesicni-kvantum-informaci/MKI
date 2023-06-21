@@ -7,6 +7,45 @@
 \begin{document}
 \ExecuteMetaData[../../problems/problemT3-U1/problemT3-U1.tex]{header}
 \noindent\ExecuteMetaData[../../problems/problemT3-U1/problemT3-U1.tex]{task}
-\proborigin{}
+\proborigin{Michal má rád žhavou (ro)ma(n)tiku.}
 \klein
+V roce 1843 u irského mostu Broom Bridge,
+zatímco se na něj jeho manželka dívala romantickým pohledem žádajícím o vášnivý polibek nad poklidně šumící řekou,
+sir William Rowan Hamilton dostal nápad, jak úspěšně rozšířit matematický obor komplexních čísel.
+Rozhodl se přidat hned dvě další imaginární jednotky namísto jedné. Do mostu, kolem něhož se svou milou procházel,
+vyryl soustavu rovnic, která imaginární jednotky jeho nového číselného oboru jednoznačně definuje.
+$$i^2=j^2=k^2=ijk=-1$$
+Nově přidané jednotky jsou tedy $j$ a $k$. Čísla, která jsou tvořena těmito jednotkami, dostala název \emph{kvaterniony} a to kvůli tomu,
+že sestávají celkem ze čtyř částí, jedné reálné a tří imaginárních. Od reálných a komplexních čísel se liší jednou zajímavou vlastností, kterou si nyní ukážeme.
+\\
+\\
+Z rovnice výše si vytáhneme rovnici
+$$ijk=-1$$
+a vynásobíme obě strany imaginární jednotkou $k$ (zprava).
+$$ijkk=-k$$
+$$ijk^2=-k$$
+Evidentně dle původní definice $k^2=-1$.
+$$-ij=-k$$
+Pokračujeme dál\dots Vynásobíme poslední rovnici $i$ zleva.
+$$-i^2j=-ik$$
+$$j=-ik$$
+Nově vyjádřené $j$ dosadíme za jedno $j$ v rovnici
+$$j^2=ijk\text{.}$$
+$$j(-ik)=ijk$$
+$$-jik=ijk$$
+A vynásobíme $k$ zprava.
+$$-jik^2=ijk^2$$
+$$ji=-ij$$
+Dostáváme vskutku zajímavý výsledek. Na pořadí násobení záleží. Proto po celou dobu rozboru je zdůrazňováno, zda se jedná o násobí zleva, nebo zprava.
+U kvaternionů na tom vskutku sejde. Neplatí u nich totiž komutativnost násobení. Každopádně dostáváme vhodné kandidáty na čísla $a$ a $b$.
+Ještě musíme ověřit jejich absolutní hodnotu, respektive absolutní hodnotu jejich druhé mocniny. Druhá mocnina obou imaginárních jednotek je rovna $-1$ a absolutní hodnota $-1$ je rovna $1$.
+Našli jsme tedy správná čísla.
+$$a=i$$
+$$b=j$$
+Samozřejmě existují ještě další kvaterniony, které zadané podmínky splňují, ale nám postačí $i$ a $j$. Krom toho, i kvaterniony byly o chvíli později rozšířeny na komplexnější obor čísel, \emph{oktoniony},
+které mají celkem osm částí, posléze i na \emph{sedeniony} se šestnácti částmi a úplně závěrem i na \emph{trigintaduoniony}, které mají rekordních 32 složek. Souhrně jsou kvaterniony a všechny tyto složitější skupiny čísel
+nazývány \emph{hyperkomplexní čísla}. Ovšem to nejsou v matematice jediná čísla splňující naše podmínky. Kupříkladu vektorový součin dvou vektorů je antikomutativní, jenže zase nekoresponduje s notací standardního násobení,
+při kterém se dá vynechat znak násobení. Objekty, u kterých to však funguje, jsou zase o něco složitější a nazývají se \emph{matice}.
+Jedná se o soubor čísel uspořádaných do řádků a sloupců, který sice v rovnici může reprezentovat soustavu rovnic, ovšem je klasifikován jako samostatná proměnná. Má speciální pravidla pro násobení, která také nezaručují komutativitu.
+Mezi maticemi bychom mohli také hledat řešení. Dokonce i sám Paul Dirac, britský kvantový fyzik, využil vlstnosti jejich násobení a postavil na nich svou slavnou Diracovu rovnici pro relativistický popis fermionů.
 \end{document}
