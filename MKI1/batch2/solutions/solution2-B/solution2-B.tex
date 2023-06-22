@@ -16,18 +16,21 @@ kde $v_p$ je rychlost přijímače, tedy auta, a $v$ je rychlost vlnění, v na�
 Proto za $v$ dosadíme rychlost světla $c$.
 
 Chceme vypočítat, jakou rychlostí by se řidič musel pohybovat, tedy chceme zjistit $v_p$.
-Roznásobením závorky a úpravou se dostaneme k vztahu:
-$$\frac{f_p-f_e}{f_e}=\frac{v_p}{c}.$$
-frekvence můžeme obměnit za vlnové délky.
+Úpravou se dostaneme k vztahu:
+$$\frac{f_p}{f_e}-1=\frac{v_p}{c}.$$
+Dále využijeme obecného vztahu pro frekvenci světelného záření
+$$f=\frac{c}{\lambda}$$
+a vyměníme frekvence za vlnové délky v převráceném tvaru.
+$$\frac{\lambda_e}{\lambda_p}-1=\frac{v_p}{c}$$
 $$\frac{\lambda_e-\lambda_p}{\lambda_p}=\frac{v_p}{c}$$
 Malá odbočka: dostali jsme se k vztahu, který se používá (zjednodušeně) v astrofyzice. Levá strana rovnice se nazývá rudý/červený posuv.
 
 Zpět však k naší úloze.
-Za vlnovou délku $\lambda_e$ emitovaného světla dosadíme vlnovou délku $\lambda_R$ červené barvy, a za vlnovou délku $\lambda_p$ přijatého světla vlnovou délku $\lambda_G$ zeléné barvy. 
+Za vlnovou délku $\lambda_e$ emitovaného světla dosadíme vlnovou délku $\lambda_R$ červené barvy, a za vlnovou délku $\lambda_p$ přijatého světla vlnovou délku $\lambda_G$ zelené barvy. 
 Rovnici už jen upravíme tak, abychom vyjádřili rychlost $v_p$ auta.
-$${v_p}=c\frac{\lambda_R-\lambda_G}{\lambda_G}$$
+$${v_p}=\frac{\lambda_R-\lambda_G}{\lambda_G}c$$
 Číselně výsledek vychází
-$$v_p\approx0,27c\approx8,2\cdot10^7\si{\m\per\s}$$
+$$v_p\approx0,27c\approx8,2\cdot10^7\si{\m\per\s}\text{.}$$
 Výsledek vám možná nebude vycházet na číslo stejně\dots to ale vůbec nevadí. Při takhle velkém čísle nás výsledek zajímá pouze řádově.
 
 Klasický Dopplerův jev platí pro vlnění, které se šíří jen v určitém prostředí (třeba vzduch nebo voda).
@@ -41,14 +44,15 @@ $$f_p=f_e\sqrt{\frac{c+v}{c-v}},$$
 kde $f_p$ je přijímaná frekvence, $f_e$ frekvence emitovaná a $v$ relativní rychlost.
 Frekvence opět obdobně nahradíme za vlnové délky a rovnici postupně upravíme.
 $$\left(\frac{\lambda_e}{\lambda_p}\right)^2=\frac{c+v}{c-v}$$
-$$\left(\frac{\lambda_e}{\lambda_p}\right)^2{c-v}={c+v}$$
-$$\left(\frac{\lambda_e}{\lambda_p}\right)^2c-c=2v$$
+$$\left(\frac{\lambda_e}{\lambda_p}\right)^2\left(c-v\right)={c+v}$$
+$$\left[\left(\frac{\lambda_e}{\lambda_p}\right)^2-1\right]c=\left[\left(\frac{\lambda_e}{\lambda_p}\right)^2+1\right]v$$
 %$$v=\frac{c}{2}\left(\left(\frac{\lambda_p}{\lambda_e}\right)^2-1\right)$$
-$$v=\frac{c}{2}\left(\frac{\lambda_p^2}{\lambda_e^2}-1\right)$$
+$$v=\frac{\frac{\lambda_e^2}{\lambda_p^2}-1}{\frac{\lambda_e^2}{\lambda_p^2}+1}c$$
+$$v=\frac{\lambda_e^2-\lambda_p^2}{\lambda_e^2+\lambda_p^2}c$$
 Číselně je rychlost $v$
-$$v\approx9,3\cdot10^7\;\mathrm{m\cdot s^{-1}}.$$
+$$v\approx0,24c\approx7,1\cdot10^7\;\mathrm{m\cdot s^{-1}}.$$
 Vidíme, že oba výsledky jsou pro tak velká čísla řádově stejná, proto v tomto případě je akceptovatelné použít i klasický Dopplerův efekt.
-Pro menší čísla by to však mohl být problém, proto pro světlo vždy počítejte s relativistickým Dopplerovým jevem.
+Pro větší čísla by to však mohl být problém, proto pro světlo vždy počítejte s relativistickým Dopplerovým jevem.
 \end{document}
 
 %https://www.christian-doppler.net/cs/doppleruv-jev/
