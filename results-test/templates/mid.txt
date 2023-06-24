@@ -1,0 +1,11 @@
+\end{tabular*}
+\end{center}
+\end{figure}
+%
+\vspace*{0.5cm}
+\section*{\centering Celková výsledková listina}
+\vspace*{-0.5cm}
+\begin{figure}[H]
+\begin{center}
+\noindent\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} c l c c c c c c c|c c c }
+& \textbf{Jméno} & \textbf{Třída} & \textbf{1. série} & \textbf{2. série} & \textbf{3. série} & \textbf{4. série} & \textbf{5. série} & \textbf{6. série\,\,} & \textbf{\%}  & \textbf{\#}  & \textbf{$\Sigma$} \\

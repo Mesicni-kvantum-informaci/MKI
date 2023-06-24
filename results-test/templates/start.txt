@@ -1,0 +1,17 @@
+\documentclass{../../style/mkimain}
+
+\series{1}
+\month{září}
+\year{2023}
+
+\begin{document}
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength\tabcolsep{0pt}
+\begin{center}
+\vspace*{-1.3cm}
+\section*{\centering Výsledková listina 1. série}
+\vspace*{-0.5cm}
+\begin{figure}[H]
+\begin{center}
+\noindent\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} c l c c c c c c c|c c c }
+& \textbf{Jméno}  & \textbf{Třída} & \textbf{U1} & \textbf{U2} & \textbf{U3} & \textbf{A} & \textbf{K} & \textbf{B\ \ } & \textbf{\%}  & \textbf{\#}  & \textbf{$\Sigma$} \\

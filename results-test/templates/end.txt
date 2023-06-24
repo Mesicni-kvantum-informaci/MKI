@@ -1,0 +1,10 @@
+\end{tabular*}
+\end{center}
+\end{figure}
+\end{center}
+%
+\vspace{0.4cm}
+\%\, \dots\, úspěšnost v řešených úlohách\\
+\#\, \dots\, úspěšnost ve všech úlohách\\
+$\Sigma$\, \dots\, celkový počet bodů
+\end{document}

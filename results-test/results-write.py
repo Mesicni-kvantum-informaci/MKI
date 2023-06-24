@@ -69,6 +69,6 @@ Dict = dict({'Jmeno': Name, 'Trida': Class, 'U1': u1, 'U2': u2, 'U3': u3, 'A': a
 
 field_names = ['Jmeno', 'Trida', 'U1', 'U2', 'U3', 'A', 'K', 'B', 'Procento', 'Hashtag', 'Celkem']
 
-with open('results.csv', 'a') as results:
+with open('results.csv', 'a', encoding='utf-8') as results:
     dictwriter_object = DictWriter(results, fieldnames=field_names)
     dictwriter_object.writerow(Dict)
