@@ -6,14 +6,14 @@ a = ' & '
 # Reading data from results csv file
 dict_list = []
 
-with open('results.csv', 'r', encoding='utf-8') as data:
+with open('data/results.csv', 'r', encoding='utf-8') as data:
   for line in csv.DictReader(data):
       dict_list.append(line)
 
 # Reading data from ideal csv file
 ideal_dict = []
 
-with open('ideal.csv', 'r') as data:
+with open('data/ideal.csv', 'r') as data:
     for line in csv.DictReader(data):
         ideal_dict.append(line)
 
@@ -65,7 +65,7 @@ for dictt in dict_list:
   print(dictt)
 
 # Writing to LaTeX results file
-with open('out/results.tex', 'w', encoding='utf-8') as tex:
+with open('../out/results.tex', 'w', encoding='utf-8') as tex:
   with open('templates/start.txt', 'r', encoding='utf-8') as start:
     for line in start:
       tex.write(line)
