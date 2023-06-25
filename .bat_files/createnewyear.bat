@@ -1,22 +1,23 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set /p Year=Enter calendar year:
+set /p Year=Enter current calendar year:
+set /p Year2=Enter next calendar year:
 set /p MKIyear=Enter MKI year:
 
 set month[0]=null
-set month[1]=leden
-set month[2]=únor
-set month[3]=březen
-set month[4]=duben
-set month[5]=květen
-set month[6]=červen
-set month[7]=červenec
-set month[8]=srpen
-set month[9]=září
-set month[10]=říjen
-set month[11]=listopad
-set month[12]=prosinec
+set month[1]=září
+set month[2]=říjen
+set month[3]=listopad
+set month[4]=prosinec
+set month[5]=leden
+set month[6]=únor
+set month[7]=březen
+set month[8]=duben
+set month[9]=květen
+set month[10]=červen
+set month[11]=červenec
+set month[12]=srpen
 
 set num[0]=null
 set num[1]=I
@@ -38,7 +39,7 @@ md "MKI%MKIyear%"
 cd MKI%MKIyear%
 
 ::for loop creates all folders
-for /l %%x in (1, 1, 12) do (
+for /l %%x in (1, 1, 6) do (
 	::creates 4 folders in each batch folder (main, mainsol, problems, solutions)
 	md "batch%%x"/"main" "batch%%x"/"mainsol" "batch%%x"/"problems" "batch%%x"/"solutions"
 
@@ -83,7 +84,7 @@ echo ^| 1-B   ^|       ^|      ^|       ^|
 cd main\batch1el
 (
 echo \documentclass{../../../../style/mkimain}
-echo: 
+echo:
 echo \series{1}
 echo \month{%month[1]%}
 echo \year{%Year%}
@@ -103,7 +104,7 @@ echo \end{document}
 cd ..\batch1print
 (
 echo \documentclass{../../../../style/mkimain}
-echo: 
+echo:
 echo \series{1}
 echo \month{%month[1]%}
 echo \year{%Year%}
@@ -123,7 +124,7 @@ echo \end{document}
 cd ..\..\mainsol\batch1solel
 (
 echo \documentclass{../../../../style/mkimain}
-echo: 
+echo:
 echo \series{1}
 echo \month{%month[1]%}
 echo \year{%Year%}
@@ -143,7 +144,7 @@ echo \end{document}
 cd ..\batch1solprint
 (
 echo \documentclass{../../../../style/mkimain}
-echo: 
+echo:
 echo \series{1}
 echo \month{%month[1]%}
 echo \year{%Year%}
@@ -207,7 +208,7 @@ echo %%^<*task^>
 echo:
 echo \noindent
 echo:
-echo %%^</task^> 
+echo %%^</task^>
 echo \end{document}
 )>"problem1-B.tex"
 
@@ -258,7 +259,7 @@ echo %%^<*task^>
 echo:
 echo \noindent
 echo:
-echo %%^</task^> 
+echo %%^</task^>
 echo \end{document}
 )>"problem1-U1.tex"
 
@@ -278,7 +279,7 @@ echo %%^<*task^>
 echo:
 echo \noindent
 echo:
-echo %%^</task^> 
+echo %%^</task^>
 echo \end{document}
 )>"problem1-U2.tex"
 
@@ -298,7 +299,7 @@ echo %%^<*task^>
 echo:
 echo \noindent
 echo:
-echo %%^</task^> 
+echo %%^</task^>
 echo \end{document}
 )>"problem1-U3.tex"
 
@@ -400,7 +401,9 @@ echo \end{document}
 )>"solution1-U3.tex"
 
 ::for loop creates .tex files in rest of batchn folders
-for /l %%y in (2, 1, 12) do (
+for /l %%y in (2, 1, 6) do (
+	:: if for loop var is less than or equal to number coresponding to december uses var %Year% - current year
+	if %%y LEQ 4 (
 	cd ..\..\..\batch%%y
 	(
 echo # Batch%%y - problems
@@ -418,7 +421,7 @@ echo ^| %%y-B   ^|       ^|      ^|       ^|
 cd main\batch%%yel
 (
 echo \documentclass{../../../../style/mkimain}
-echo: 
+echo:
 echo \series{%%y}
 echo \month{!month[%%y]!}
 echo \year{%Year%}
@@ -438,7 +441,7 @@ echo \end{document}
 cd ..\batch%%yprint
 (
 echo \documentclass{../../../../style/mkimain}
-echo: 
+echo:
 echo \series{%%y}
 echo \month{!month[%%y]!}
 echo \year{%Year%}
@@ -458,7 +461,7 @@ echo \end{document}
 cd ..\..\mainsol\batch%%ysolel
 (
 echo \documentclass{../../../../style/mkimain}
-echo: 
+echo:
 echo \series{%%y}
 echo \month{!month[%%y]!}
 echo \year{%Year%}
@@ -478,7 +481,7 @@ echo \end{document}
 cd ..\batch%%ysolprint
 (
 echo \documentclass{../../../../style/mkimain}
-echo: 
+echo:
 echo \series{%%y}
 echo \month{!month[%%y]!}
 echo \year{%Year%}
@@ -542,7 +545,7 @@ echo %%^<*task^>
 echo:
 echo \noindent
 echo:
-echo %%^</task^> 
+echo %%^</task^>
 echo \end{document}
 )>"problem%%y-B.tex"
 
@@ -593,7 +596,7 @@ echo %%^<*task^>
 echo:
 echo \noindent
 echo:
-echo %%^</task^> 
+echo %%^</task^>
 echo \end{document}
 )>"problem%%y-U1.tex"
 
@@ -613,7 +616,7 @@ echo %%^<*task^>
 echo:
 echo \noindent
 echo:
-echo %%^</task^> 
+echo %%^</task^>
 echo \end{document}
 )>"problem%%y-U2.tex"
 
@@ -633,7 +636,7 @@ echo %%^<*task^>
 echo:
 echo \noindent
 echo:
-echo %%^</task^> 
+echo %%^</task^>
 echo \end{document}
 )>"problem%%y-U3.tex"
 
@@ -733,6 +736,341 @@ echo \proborigin{}
 echo \klein
 echo \end{document}
 )>"solution%%y-U3.tex"
+:: if for loop var is bigger than number coresponding to december uses var %Year2% - next year
+	) ELSE (
+		cd ..\..\..\batch%%y
+	(
+echo # Batch%%y - problems
+echo:
+echo ^| úloha ^| název ^| téma ^| jméno ^|
+echo ^|-------^|-------^|------^|-------^|
+echo ^| %%y-U1  ^|       ^|      ^|       ^|
+echo ^| %%y-U2  ^|       ^|      ^|       ^|
+echo ^| %%y-U3  ^|       ^|      ^|       ^|
+echo ^| %%y-A   ^|       ^|      ^|       ^|
+echo ^| %%y-K   ^|       ^|      ^|       ^|
+echo ^| %%y-B   ^|       ^|      ^|       ^|
+)>"batch%%y.md"
+
+cd main\batch%%yel
+(
+echo \documentclass{../../../../style/mkimain}
+echo:
+echo \series{%%y}
+echo \month{!month[%%y]!}
+echo \year{%Year2%}
+echo:
+echo \begin{document}
+echo \firstpageel{../../../../propagace/logo/mkilogo.png}
+echo \import{../../problems/problem%%y-U1/}{problem%%y-U1.tex}
+echo \import{../../problems/problem%%y-U2/}{problem%%y-U2.tex}
+echo \import{../../problems/problem%%y-U3/}{problem%%y-U3.tex}
+echo \import{../../problems/problem%%y-A/}{problem%%y-A.tex}
+echo \import{../../problems/problem%%y-K/}{problem%%y-K.tex}
+echo \import{../../problems/problem%%y-B/}{problem%%y-B.tex}
+echo \import{../../../../general/end}{end.tex}
+echo \end{document}
+)>"batch%%yel.tex"
+
+cd ..\batch%%yprint
+(
+echo \documentclass{../../../../style/mkimain}
+echo:
+echo \series{%%y}
+echo \month{!month[%%y]!}
+echo \year{%Year2%}
+echo:
+echo \begin{document}
+echo \firstpageprint{../../../../propagace/logo/mkilogo.png}{../../../../propagace/qrcodes/MKI%MKIyear%/batch%%yel.png}
+echo \import{../../problems/problem%%y-U1/}{problem%%y-U1.tex}
+echo \import{../../problems/problem%%y-U2/}{problem%%y-U2.tex}
+echo \import{../../problems/problem%%y-U3/}{problem%%y-U3.tex}
+echo \import{../../problems/problem%%y-A/}{problem%%y-A.tex}
+echo \import{../../problems/problem%%y-K/}{problem%%y-K.tex}
+echo \import{../../problems/problem%%y-B/}{problem%%y-B.tex}
+echo \import{../../../../general/end}{end.tex}
+echo \end{document}
+)>"batch%%yprint.tex"
+
+cd ..\..\mainsol\batch%%ysolel
+(
+echo \documentclass{../../../../style/mkimain}
+echo:
+echo \series{%%y}
+echo \month{!month[%%y]!}
+echo \year{%Year2%}
+echo:
+echo \begin{document}
+echo \solfirstpageel{../../../../propagace/logo/mkilogo.png}
+echo \import{../../solutions/solution%%y-U1/}{solution%%y-U1.tex}
+echo \import{../../solutions/solution%%y-U2/}{solution%%y-U2.tex}
+echo \import{../../solutions/solution%%y-U3/}{solution%%y-U3.tex}
+echo \import{../../solutions/solution%%y-A/}{solution%%y-A.tex}
+echo \import{../../solutions/solution%%y-K/}{solution%%y-K.tex}
+echo \import{../../solutions/solution%%y-B/}{solution%%y-B.tex}
+echo \import{../../../../general/end}{end.tex}
+echo \end{document}
+)>"batch%%ysolel.tex"
+
+cd ..\batch%%ysolprint
+(
+echo \documentclass{../../../../style/mkimain}
+echo:
+echo \series{%%y}
+echo \month{!month[%%y]!}
+echo \year{%Year2%}
+echo:
+echo \begin{document}
+echo \solfirstpageprint{../../../../propagace/logo/mkilogo.png}{../../../../propagace/qrcodes/MKI%MKIyear%/batch%%ysolel.png}
+echo \import{../../solutions/solution%%y-U1/}{solution%%y-U1.tex}
+echo \import{../../solutions/solution%%y-U2/}{solution%%y-U2.tex}
+echo \import{../../solutions/solution%%y-U3/}{solution%%y-U3.tex}
+echo \import{../../solutions/solution%%y-A/}{solution%%y-A.tex}
+echo \import{../../solutions/solution%%y-K/}{solution%%y-K.tex}
+echo \import{../../solutions/solution%%y-B/}{solution%%y-B.tex}
+echo \import{../../../../general/end}{end.tex}
+echo \end{document}
+)>"batch%%ysolprint.tex"
+
+cd ..\..\problems\problem%%y-A
+(
+echo \documentclass{../../../../style/mkimain}
+echo:
+echo \series{%%y}
+echo \month{!month[%%y]!}
+echo \year{%Year2%}
+echo:
+echo \begin{document}
+echo %%^<*header^>
+echo \section*{!num[%%y]!.A Header%%y-A}
+echo %%^</header^>
+echo:
+echo:
+echo %%\\
+echo %%\\
+echo %%\textbf{Úloha:}
+echo:
+echo %%^<*task^>
+echo:
+echo %%\begin{enumerate}[\noindent {}]
+echo %%\item otazka
+echo %%  \begin{choices}
+echo %%    \choice
+echo %%  \end{choices}
+echo %%\end{enumerate}
+echo:
+echo %%^</task^>
+echo \end{document}
+)>"problem%%y-A.tex"
+
+cd ..\problem%%y-B
+(
+echo \documentclass{../../../../style/mkimain}
+echo:
+echo \series{%%y}
+echo \month{!month[%%y]!}
+echo \year{%Year2%}
+echo:
+echo \begin{document}
+echo %%^<*header^>
+echo \section*{!num[%%y]!.B Header%%y-B}
+echo %%^</header^>
+echo %%^<*task^>
+echo:
+echo \noindent
+echo:
+echo %%^</task^>
+echo \end{document}
+)>"problem%%y-B.tex"
+
+cd ..\problem%%y-K
+(
+echo \documentclass{../../../../style/mkimain}
+echo:
+echo \series{%%y}
+echo \month{!month[%%y]!}
+echo \year{%Year2%}
+echo:
+echo \begin{document}
+echo %%^<*header^>
+echo \section*{!num[%%y]!.K Header%%y-K}
+echo %%^</header^>
+echo:
+echo:
+echo %%\\
+echo %%\\
+echo %%\textbf{Úloha:}
+echo:
+echo %%^<*task^>
+echo:
+echo %%\begin{enumerate}[\noindent {}]
+echo %%\item otazka
+echo %%  \begin{choices}
+echo %%    \choice
+echo %%  \end{choices}
+echo %%\end{enumerate}
+echo:
+echo %%^</task^>
+echo \end{document}
+)>"problem%%y-K.tex"
+
+cd ..\problem%%y-U1
+(
+echo \documentclass{../../../../style/mkimain}
+echo:
+echo \series{%%y}
+echo \month{!month[%%y]!}
+echo \year{%Year2%}
+echo:
+echo \begin{document}
+echo %%^<*header^>
+echo \section*{!num[%%y]!.U1 Header%%y-U1}
+echo %%^</header^>
+echo %%^<*task^>
+echo:
+echo \noindent
+echo:
+echo %%^</task^>
+echo \end{document}
+)>"problem%%y-U1.tex"
+
+cd ..\problem%%y-U2
+(
+echo \documentclass{../../../../style/mkimain}
+echo:
+echo \series{%%y}
+echo \month{!month[%%y]!}
+echo \year{%Year2%}
+echo:
+echo \begin{document}
+echo %%^<*header^>
+echo \section*{!num[%%y]!.U2 Header%%y-U2}
+echo %%^</header^>
+echo %%^<*task^>
+echo:
+echo \noindent
+echo:
+echo %%^</task^>
+echo \end{document}
+)>"problem%%y-U2.tex"
+
+cd ..\problem%%y-U3
+(
+echo \documentclass{../../../../style/mkimain}
+echo:
+echo \series{%%y}
+echo \month{!month[%%y]!}
+echo \year{%Year2%}
+echo:
+echo \begin{document}
+echo %%^<*header^>
+echo \section*{!num[%%y]!.U3 Header%%y-U3}
+echo %%^</header^>
+echo %%^<*task^>
+echo:
+echo \noindent
+echo:
+echo %%^</task^>
+echo \end{document}
+)>"problem%%y-U3.tex"
+
+
+cd ..\..\solutions\solution%%y-A
+(
+echo \documentclass{../../../../style/mkimain}
+echo:
+echo \series{%%y}
+echo \month{!month[%%y]!}
+echo \year{%Year2%}
+echo:
+echo \begin{document}
+echo \ExecuteMetaData[../../problems/problem%%y-A/problem%%y-A.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem%%y-A/problem%%y-A.tex]{task}
+echo \proborigin{}
+echo \klein
+echo \end{document}
+)>"solution%%y-A.tex"
+
+cd ..\solution%%y-B
+(
+echo \documentclass{../../../../style/mkimain}
+echo:
+echo \series{%%y}
+echo \month{!month[%%y]!}
+echo \year{%Year2%}
+echo:
+echo \begin{document}
+echo \ExecuteMetaData[../../problems/problem%%y-B/problem%%y-B.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem%%y-B/problem%%y-B.tex]{task}
+echo \proborigin{}
+echo \klein
+echo \end{document}
+)>"solution%%y-B.tex"
+
+cd ..\solution%%y-K
+(
+echo \documentclass{../../../../style/mkimain}
+echo:
+echo \series{%%y}
+echo \month{!month[%%y]!}
+echo \year{%Year2%}
+echo:
+echo \begin{document}
+echo \ExecuteMetaData[../../problems/problem%%y-K/problem%%y-K.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem%%y-K/problem%%y-K.tex]{task}
+echo \proborigin{}
+echo \klein
+echo \end{document}
+)>"solution%%y-K.tex"
+
+cd ..\solution%%y-U1
+(
+echo \documentclass{../../../../style/mkimain}
+echo:
+echo \series{%%y}
+echo \month{!month[%%y]!}
+echo \year{%Year2%}
+echo:
+echo \begin{document}
+echo \ExecuteMetaData[../../problems/problem%%y-U1/problem%%y-U1.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem%%y-U1/problem%%y-U1.tex]{task}
+echo \proborigin{}
+echo \klein
+echo \end{document}
+)>"solution%%y-U1.tex"
+
+cd ..\solution%%y-U2
+(
+echo \documentclass{../../../../style/mkimain}
+echo:
+echo \series{%%y}
+echo \month{!month[%%y]!}
+echo \year{%Year2%}
+echo:
+echo \begin{document}
+echo \ExecuteMetaData[../../problems/problem%%y-U2/problem%%y-U2.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem%%y-U2/problem%%y-U2.tex]{task}
+echo \proborigin{}
+echo \klein
+echo \end{document}
+)>"solution%%y-U2.tex"
+
+cd ..\solution%%y-U3
+(
+echo \documentclass{../../../../style/mkimain}
+echo:
+echo \series{%%y}
+echo \month{!month[%%y]!}
+echo \year{%Year2%}
+echo:
+echo \begin{document}
+echo \ExecuteMetaData[../../problems/problem%%y-U3/problem%%y-U3.tex]{header}
+echo \noindent\ExecuteMetaData[../../problems/problem%%y-U3/problem%%y-U3.tex]{task}
+echo \proborigin{}
+echo \klein
+echo \end{document}
+)>"solution%%y-U3.tex"
+	)
 )
 
 cd ..\..\..\..\propagace\qrcodes
