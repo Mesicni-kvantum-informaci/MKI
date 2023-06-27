@@ -1,6 +1,7 @@
 \end{tabular*}
 \end{center}
 \end{figure}
+%</tab2>
 \end{center}
 %
 \vspace{0.4cm}

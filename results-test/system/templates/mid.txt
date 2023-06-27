@@ -1,8 +1,10 @@
 \end{tabular*}
 \end{center}
 \end{figure}
+%</tab1>
 %
 \vspace*{0.5cm}
+%<*tab2>
 \section*{\centering Celková výsledková listina}
 \vspace*{-0.5cm}
 \begin{figure}[H]
